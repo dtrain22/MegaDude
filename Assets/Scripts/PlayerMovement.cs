@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Direction {LEFT, RIGHT};
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5.0f;
@@ -10,6 +11,15 @@ public class PlayerMovement : MonoBehaviour
 
     private Transform _transform;
     private Rigidbody2D _rigidbody;
+    private Direction playerDirection = Direction.RIGHT;
+
+    public Direction PlayerDirection
+    {
+        get
+        {
+            return playerDirection;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +39,14 @@ public class PlayerMovement : MonoBehaviour
     {
         float translate = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         _transform.Translate(translate, 0, 0);
+
+        if(translate > 0)
+        {
+            playerDirection = Direction.RIGHT;
+        } else if(translate < 0)
+        {
+            playerDirection = Direction.LEFT;
+        }
     }
 
     void Jump()
