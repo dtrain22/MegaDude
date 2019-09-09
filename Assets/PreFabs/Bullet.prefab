@@ -108,3 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a030a954e2e244459bce252a9260cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletDirection: 1
+  speed: 5
+  damage: 5
+  _transform: {fileID: 9122068517925896424}
