@@ -6,10 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
 
-    private PlayerMovement playerMovement; // for bullet direction
-
-    // AudioClip
-    public AudioClip pewpew;
+    private PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +21,6 @@ public class Weapon : MonoBehaviour
         {
             var tbullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
             tbullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
-
-            PlayerAudio.PlaySound(pewpew);
         }
     }
 }
