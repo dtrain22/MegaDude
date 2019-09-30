@@ -164,7 +164,6 @@ MonoBehaviour:
   pewpew: {fileID: 8300000, guid: b61f459cf27096140a6ff0e2f310b8f8, type: 3}
   chargeWeapon: {fileID: 8300000, guid: c6498d02597416249834e1e6905c2906, type: 3}
   bigPew: {fileID: 8300000, guid: 3553c5d800cc6cb468beef19f9ecd655, type: 3}
---- !u!82 &205174627263968020
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,19 +259,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5147357746338220113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4850729429313601159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3caed8e9ce613e468cc46be67de936a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8559198963597825487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,3 +271,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDeath: {fileID: 8300000, guid: 67e5a99e25b1f154dad0658cddd3be08, type: 3}
+
