@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Direction playerDirection = Direction.RIGHT;
 
+    private AudioPlayerWrapper _audioPlayer;
     // AudioClip
     public AudioClip jump;
 
@@ -29,19 +30,14 @@ public class PlayerMovement : MonoBehaviour
     {
         _transform = GetComponent(typeof(Transform)) as Transform;
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
     }
 
     // Update is called once per frame
     void Update()
     {
         MovePlayer();
-        
-        // jump
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
-        {
-            MovementFunction.Jump(_rigidbody, jumpPower);
-            PlayerAudio.PlaySound(jump);
-        }
+        Jump();
     }
 
     void MovePlayer()
@@ -58,14 +54,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /*void Jump()
+    void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
-            PlayerAudio.PlaySound(jump);
+            _audioPlayer.PlaySound(jump);
         }
-    }*/
+    }
 
     void OnCollisionEnter2D()
     {

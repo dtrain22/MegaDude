@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
 
     private PlayerMovement playerMovement; // for bullet direction
 
+    private AudioPlayerWrapper _audioPlayer;
+
     // AudioClip
     public AudioClip pewpew;
 
@@ -15,6 +17,7 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
     }
 
     // Update is called once per frame
@@ -25,7 +28,8 @@ public class Weapon : MonoBehaviour
             var tbullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
             tbullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
 
-            PlayerAudio.PlaySound(pewpew);
-        }
+            _audioPlayer.PlaySound(pewpew);
+        } 
     }
+
 }
