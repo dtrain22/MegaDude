@@ -6,7 +6,12 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
 
-    private PlayerMovement playerMovement;
+    private PlayerMovement playerMovement; // for bullet direction
+
+    private AudioPlayerWrapper _audioPlayer;
+
+    // AudioClip
+    public AudioClip pewpew;
 
     public float chargeTimer = 0;
 
@@ -20,6 +25,7 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
     }
 
     // Update is called once per frame
@@ -40,7 +46,7 @@ public class Weapon : MonoBehaviour
         {
             var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
             cloneBullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
-            
+            _audioPlayer.PlaySound(pewpew);
             //Set max bullet size
             cloneBullet.transform.localScale += new Vector3(.26f, .26f, .26f);
             //Set max bullet power 
@@ -55,7 +61,7 @@ public class Weapon : MonoBehaviour
 
             var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
             cloneBullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
-            
+            _audioPlayer.PlaySound(pewpew);
             //Scale bullet size
             cloneBullet.transform.localScale += new Vector3(val, val, val);
 
@@ -79,5 +85,4 @@ public class Weapon : MonoBehaviour
         chargeTimer = 0;
         growthRate = 0;
     } 
-
 }

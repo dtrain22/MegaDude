@@ -14,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
     private float isToppling = 0;
     private Direction playerDirection = Direction.RIGHT;
 
+    private AudioPlayerWrapper _audioPlayer;
+    // AudioClip
+    public AudioClip jump;
+
     public Direction PlayerDirection
     {
         get
@@ -27,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _transform = GetComponent(typeof(Transform)) as Transform;
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
     }
 
     // Update is called once per frame
@@ -59,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
+            _audioPlayer.PlaySound(jump);
         }
     }
 
