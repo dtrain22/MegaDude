@@ -34,6 +34,9 @@ public class Enemy : MonoBehaviour
         if (health > 0)
         {
             _audioPlayer.PlaySound(chomp, 0.5f);
+        } else
+        {
+            Destroy(gameObject);
         }
     }
 }
