@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5.0f;
     public bool isOnGround = false;
     public float jumpPower = 7.0f;
+	public float gravity = 7.0f;
 
     private Transform _transform;
     private Rigidbody2D _rigidbody;
