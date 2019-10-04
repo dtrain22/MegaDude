@@ -8,8 +8,8 @@ public class CameraController : MonoBehaviour
     private float zPos;
     private float xDist;
     private float yDist;
-
     private Vector3 offset;
+
     // Start is called before the first frame update
     void Start()
     {
