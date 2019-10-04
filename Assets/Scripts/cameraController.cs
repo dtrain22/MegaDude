@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraController : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
     public GameObject player;
-    //private float yPos;
     private float zPos;
     private float xDist;
     private float yDist;
@@ -17,7 +16,6 @@ public class cameraController : MonoBehaviour
         offset = transform.position - player.transform.position;
         xDist = offset.x;
         yDist = offset.y;
-        //yPos = offset.y;
         zPos = offset.z;
     }
 

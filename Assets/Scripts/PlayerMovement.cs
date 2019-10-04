@@ -39,9 +39,6 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         Jump();
-    }
-    private void FixedUpdate()
-    {
         transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
