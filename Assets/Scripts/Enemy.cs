@@ -5,10 +5,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 10;
-
+    private bool hasFallen = false;
     private Transform _transform;
     private Rigidbody2D _rigidbody;
-
+    private GameObject enemy;
     private AudioPlayerWrapper _audioPlayer;
     // AudioClip
     public AudioClip chomp;
@@ -23,7 +23,14 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-       
+        if (gameObject.transform.position.y < -4)
+        {
+            hasFallen = true;
+        }
+        if (hasFallen)
+        {
+            Destroy(gameObject);
+        }
     }
 
 
