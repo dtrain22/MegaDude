@@ -72,7 +72,7 @@ using System.Collections.Generic;
 public class PlayerHealth : MonoBehaviour
 {
     public int StartingHealth = 100;
-    public int CurrentHealth;
+    public int CurrentHealth;dafdsadsasfgs
     public Slider HealthBar;
     public bool Dead;
     public bool Damage;
