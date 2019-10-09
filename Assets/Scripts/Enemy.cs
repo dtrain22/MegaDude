@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
 {
     public int health = 10;
 
-    bool isOnGround = false;
     private Transform _transform;
     private Rigidbody2D _rigidbody;
 

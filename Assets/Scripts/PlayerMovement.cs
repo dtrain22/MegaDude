@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Transform _transform;
     private Rigidbody2D _rigidbody;
-    private float isToppling = 0;
     private Direction playerDirection = Direction.RIGHT;
 
     private AudioPlayerWrapper _audioPlayer;
@@ -39,9 +38,6 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         Jump();
-    }
-    private void FixedUpdate()
-    {
         transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
