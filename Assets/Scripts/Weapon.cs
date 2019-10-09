@@ -42,6 +42,36 @@ public class Weapon : MonoBehaviour
             HoldButton();
             //chargeTimer += Time.deltaTime;
         }
+        else if (Input.GetButtonUp("Fire1"))
+        {
+            var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
+            cloneBullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
+            //_audioPlayer.PlaySound(pewpew);
+            _audioPlayer.PlaySound(pewpew);
+
+            float scaleVal;
+            int addedDamage = 0;
+            if (chargeTimer < 2)
+            {
+                scaleVal = growthRate; // scale bullet size
+                // +2 damage if held for over 1 sec
+                if (chargeTimer > 1)
+                    addedDamage += 2;
+            }
+            else // chargeTimer >= 2
+            {
+                // max bullet size and damage
+                scaleVal = .26f;
+                addedDamage = 5;
+                // bullet becomes green
+                cloneBullet.GetComponent<Renderer>().material.color = Color.green;
+            }
+
+            cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
+            cloneBullet.GetComponent<Bullet>().damage += addedDamage;
+            ButtonReleased();
+        }
+        /* old
         if (Input.GetButtonUp("Fire1") && chargeTimer > 2)
         {
             var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
@@ -72,6 +102,7 @@ public class Weapon : MonoBehaviour
             ButtonReleased();
          
         }
+        */
     }
 
     public void HoldButton()
