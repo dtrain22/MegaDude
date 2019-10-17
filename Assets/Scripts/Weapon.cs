@@ -6,9 +6,11 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
     private PlayerMovement playerMovement; // for bullet direction
+
     private AudioPlayerWrapper _audioPlayer;
     public AudioClip pewpew;
     public AudioClip bigPew;
+    public AudioClip chargeWeapon;
 
     public float chargeTimer = 0;
     private float chargeRate = 2f;
@@ -19,6 +21,7 @@ public class Weapon : MonoBehaviour
     {
         playerMovement = GetComponent<PlayerMovement>();
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
+        _audioPlayer._audioSource.clip = chargeWeapon;
     }
 
     void Update()
@@ -40,6 +43,7 @@ public class Weapon : MonoBehaviour
 
             float scaleVal;
             int addedDamage = 0;
+            _audioPlayer._audioSource.Stop();
 
             if (chargeTimer < 2)
             {
@@ -67,6 +71,7 @@ public class Weapon : MonoBehaviour
     public void HoldButton()
     {
         buttonHeldDown = true;
+        _audioPlayer._audioSource.PlayDelayed(0.08f);
     }
 
     public void ButtonReleased()

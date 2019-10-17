@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioPlayerWrapper : MonoBehaviour
 {
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
 
     // Start is called before the first frame update
     void Start()
