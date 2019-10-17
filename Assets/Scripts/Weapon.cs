@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
 
     // AudioClip
     public AudioClip pewpew;
+    public AudioClip bigPew;
 
     public float chargeTimer = 0;
 
@@ -46,8 +47,6 @@ public class Weapon : MonoBehaviour
         {
             var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
             cloneBullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
-            //_audioPlayer.PlaySound(pewpew);
-            _audioPlayer.PlaySound(pewpew);
 
             float scaleVal;
             int addedDamage = 0;
@@ -57,6 +56,8 @@ public class Weapon : MonoBehaviour
                 // +2 damage if held for over 1 sec
                 if (chargeTimer > 1)
                     addedDamage += 2;
+
+                _audioPlayer.PlaySound(pewpew);
             }
             else // chargeTimer >= 2
             {
@@ -65,6 +66,8 @@ public class Weapon : MonoBehaviour
                 addedDamage = 5;
                 // bullet becomes green
                 cloneBullet.GetComponent<Renderer>().material.color = Color.green;
+
+                _audioPlayer.PlaySound(bigPew);
             }
 
             cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
