@@ -12,6 +12,9 @@ public class PlayerHealth : MonoBehaviour
     public int CurrentHealth;
     public bool Damage;
     public Slider HealthBar;
+    /*private Material FlashWhite;
+    private Material FlashDefault;
+    SpriteRenderer Sr;*/
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,9 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.value = health;
         player = GameObject.FindGameObjectWithTag("Player");
         hasDied = false;
+        /*Sr = GetComponent<SpriteRenderer>();
+        FlashWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
+        FlashDefault = Sr.material;*/
     }
 
     // Update is called once per frame
@@ -45,14 +51,25 @@ public class PlayerHealth : MonoBehaviour
     }
     public void Take_Damage(int amount)
     {
+        if (Damage ==                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    true)
         Damage = true;
         CurrentHealth -= amount;
         HealthBar.value = CurrentHealth;
+        //Sr.material = FlashWhite;
+       /* else
+        {
+            Invoke("ResetMaterial", .1f);
+        }*/
+            
         /*if (CurrentHealth <= 0 && !Dead)
         {
             Death();
         }*/
 
+    }
+    /*void ResetMaterial()
+    {
+        Sr.material = FlashDefault;
     }
     /*public void Death()
     {
