@@ -6,7 +6,6 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
     private PlayerMovement playerMovement; // for bullet direction
-
     private AudioPlayerWrapper _audioPlayer;
     public AudioClip pewpew;
     public AudioClip bigPew;
