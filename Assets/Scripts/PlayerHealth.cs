@@ -21,7 +21,6 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
-        player = GameObject.FindGameObjectWithTag("Player");
         hasDied = false;
         /*Sr = GetComponent<SpriteRenderer>();
         FlashWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
@@ -33,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
     {
         HealthBar.value = CurrentHealth;
 
-        if (player.transform.position.y < -4)
+        if (gameObject.transform.position.y < -4)
         {
             hasDied = true;
             HealthBar.value = 0;
@@ -51,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void Take_Damage(int amount)
     {
-        if (Damage ==                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    true)
+  //      if (Damage ==                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    true)
         Damage = true;
         CurrentHealth -= amount;
         HealthBar.value = CurrentHealth;
