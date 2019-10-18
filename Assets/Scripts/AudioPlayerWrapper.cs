@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class AudioPlayerWrapper : MonoBehaviour
 {
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
 
-    // Start is called before the first frame update
     void Start()
     {
         // find the player audio source
@@ -15,7 +14,6 @@ public class AudioPlayerWrapper : MonoBehaviour
 
     public void PlaySound(AudioClip clip, float volumeScale = 1.0f)
     {
-        Debug.Log("playing a sound!");
         _audioSource.PlayOneShot(clip, volumeScale);
     }
 }

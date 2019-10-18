@@ -8,13 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5.0f;
     public bool isOnGround = false;
     public float jumpPower = 7.0f;
-
     private Transform _transform;
     private Rigidbody2D _rigidbody;
     private Direction playerDirection = Direction.RIGHT;
-
     private AudioPlayerWrapper _audioPlayer;
-    // AudioClip
     public AudioClip jump;
 
     public Direction PlayerDirection
@@ -25,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         _transform = GetComponent(typeof(Transform)) as Transform;
@@ -33,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovePlayer();

@@ -716,6 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b46b1b5c4608e945b56c82fcf1f2faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
 --- !u!1001 &4850729430016380730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,6 +789,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4223254855293512881, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
+        type: 3}
+      propertyPath: bigPew
+      value: 
+      objectReference: {fileID: 8300000, guid: 3553c5d800cc6cb468beef19f9ecd655, type: 3}
+    - target: {fileID: 4223254855293512881, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
+        type: 3}
+      propertyPath: chargeWeapon
+      value: 
+      objectReference: {fileID: 8300000, guid: c6498d02597416249834e1e6905c2906, type: 3}
     m_RemovedComponents:
     - {fileID: 8559198963597825487, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
