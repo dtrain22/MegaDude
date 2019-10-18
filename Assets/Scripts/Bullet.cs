@@ -7,16 +7,13 @@ public class Bullet : MonoBehaviour
     public Direction bulletDirection = Direction.RIGHT;
     public float speed = 15.0f;
     public int damage = 5;
-
     public Transform _transform;
 
-    // Start is called before the first frame update
     void Start()
     {
         _transform = transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MoveBullet();

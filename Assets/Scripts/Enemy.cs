@@ -5,12 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 10;
-
     private Transform _transform;
     private Rigidbody2D _rigidbody;
-
     private AudioPlayerWrapper _audioPlayer;
-    // AudioClip
     public AudioClip chomp;
     public AudioClip death;
 
@@ -25,7 +22,6 @@ public class Enemy : MonoBehaviour
     {
        
     }
-
 
     public void Damage(int dmg)
     {
