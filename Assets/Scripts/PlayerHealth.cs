@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     GameObject player;
-    public int health; 
+    public int health;
+    public bool hasDied; 
     public int CurrentHealth;
     public bool Damage;
     public Slider HealthBar;
@@ -21,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
+        hasDied = false;
         /*Sr = GetComponent<SpriteRenderer>();
         FlashWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
         FlashDefault = Sr.material;*/
@@ -33,16 +35,20 @@ public class PlayerHealth : MonoBehaviour
         if (gameObject.transform.position.y < -4)
 
         {
+            hasDied = true;
             HealthBar.value = 0;
-            Die();
+        }
+        if (hasDied)
+        {
+            StartCoroutine("Die"); 
         }
     }
 
-    void Die()
+    IEnumerator Die()
     {
         SceneManager.LoadScene("SampleScene");
+        yield return null;
     }
-
     public void Take_Damage(int amount)
     {
   //      if (Damage ==                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    true)
