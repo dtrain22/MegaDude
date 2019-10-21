@@ -20,10 +20,12 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        float yPos = player.transform.position.y + yDist;
-        float xPos = player.transform.position.x + xDist;
-        offset.Set(xPos, yPos, zPos);
-
-        transform.position = offset;
+        if (player != null)
+        {
+            float yPos = player.transform.position.y + yDist;
+            float xPos = player.transform.position.x + xDist;
+            offset.Set(xPos, yPos, zPos);
+            transform.position = offset;
+        }
     }
 }
