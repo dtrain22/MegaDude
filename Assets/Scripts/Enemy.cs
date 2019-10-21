@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private GameObject player;
     public int health = 10;
+    public int meleeDamage = 5;
     private Transform _transform;
     private Rigidbody2D _rigidbody;
     private AudioPlayerWrapper _audioPlayer;
@@ -13,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.Find("Player");
         _transform = GetComponent(typeof(Transform)) as Transform;
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
@@ -34,4 +37,6 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
 }
