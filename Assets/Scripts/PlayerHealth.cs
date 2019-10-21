@@ -1,35 +1,67 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    GameObject player;
     public int health;
-    public bool hasDied;
- 
+    public int CurrentHealth;
+    public int meleeDamage = 5;
+    public bool Damage;
+    public Slider HealthBar;
+
+    /*private Material FlashWhite;
+    private Material FlashDefault;
+    SpriteRenderer Sr;
+    Start is called before the first frame update*/
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        hasDied = false;
+        health = 100;
+        CurrentHealth = health;
+        HealthBar.value = health;
+        /*Sr = GetComponent<SpriteRenderer>();
+        FlashWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
+        FlashDefault = Sr.material;*/
     }
 
     void Update()
     {
-        if(player.transform.position.y < -4)
+        HealthBar.value = CurrentHealth;
+
+        if (gameObject.transform.position.y < -4)
+
         {
-            hasDied = true;
-        }
-        if (hasDied)
-        {
-            StartCoroutine("Die"); 
+            HealthBar.value = 0;
+            Die();
         }
     }
 
-    IEnumerator Die()
+    public void Take_Damage(int amount)
+    {
+        CurrentHealth -= amount;
+        HealthBar.value = CurrentHealth;
+
+        if(CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+            Die();
+        }
+    }
+
+    void Die()
     {
         SceneManager.LoadScene("SampleScene");
-        yield return null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.name == "Enemy")
+        {
+            Take_Damage(meleeDamage);
+        }
     }
 }
+
