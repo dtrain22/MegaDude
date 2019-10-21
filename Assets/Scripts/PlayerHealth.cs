@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     private Material FlashDefault;
     SpriteRenderer Sr;*/
     // Start is called before the first frame update
+
     void Start()
     {
         health = 100;
@@ -25,12 +26,12 @@ public class PlayerHealth : MonoBehaviour
         FlashDefault = Sr.material;*/
     }
 
-    // Update is called once per frame
     void Update()
     {
         HealthBar.value = CurrentHealth;
 
         if (gameObject.transform.position.y < -4)
+
         {
             HealthBar.value = 0;
             Die();
