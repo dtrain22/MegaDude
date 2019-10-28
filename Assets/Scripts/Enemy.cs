@@ -13,6 +13,13 @@ public class Enemy : MonoBehaviour
     public AudioClip chomp;
     public AudioClip death;
 
+    public float distance;
+    public float speed;
+
+    private bool movingRight;
+
+    public Transform groundDetection;
+
     void Start()
     {
         player = GameObject.Find("Player");
@@ -23,7 +30,20 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-       
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+
+       RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+       if(groundInfo.collider == false){
+            if(movingRight == true){
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            } else {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
+
+       }
+
     }
 
     public void Damage(int dmg)
