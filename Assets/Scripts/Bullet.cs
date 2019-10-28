@@ -4,27 +4,14 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public Direction bulletDirection = Direction.RIGHT;
     public float speed = 15.0f;
     public int damage = 5;
     public Transform _transform;
+    public Rigidbody2D rb;
 
     void Start()
     {
-        _transform = transform;
-    }
-
-    void Update()
-    {
-        MoveBullet();
-    }
-
-    void MoveBullet()
-    {
-        int moveDirection = bulletDirection == Direction.LEFT ? -1 : 1;
-
-        float translate = moveDirection * speed * Time.deltaTime;
-        _transform.Translate(translate, 0, 0);
+        rb.velocity = transform.right * speed;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
