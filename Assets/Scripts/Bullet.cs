@@ -5,9 +5,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 15.0f;
-    public int damage = 5;
+    public int enemyDamage = 5;
+    public int playerDamage = 10;
     public Transform _transform;
     public Rigidbody2D rb;
+    public GameObject owner;
+
 
     void Start()
     {
@@ -16,11 +19,23 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Enemy")
+        if (owner.tag == collision.collider.tag)
         {
-            collision.collider.gameObject.GetComponent<Enemy>().Damage(damage);
-            Destroy(gameObject);
+            return;
         }
+        else
+        {
+            if (collision.collider.tag == "Enemy")
+            {
+                collision.collider.gameObject.GetComponent<Enemy>().takeDamage(enemyDamage);
+            }
+
+            if (collision.collider.tag == "Player")
+            {
+                collision.collider.gameObject.GetComponent<PlayerHealth>().Take_Damage(playerDamage);
+            }
+        }
+        Destroy(gameObject);
     }
 
     private void OnBecameInvisible()

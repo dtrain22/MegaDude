@@ -60,7 +60,8 @@ public class Weapon : MonoBehaviour
             }
 
             cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
-            cloneBullet.GetComponent<Bullet>().damage += addedDamage;
+            cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
+            cloneBullet.GetComponent<Bullet>().owner = gameObject;
             ButtonReleased();
         } 
     }
