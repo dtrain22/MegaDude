@@ -129,7 +129,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2814165259505344044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,8 +143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
+  meleeDamage: 5
   chomp: {fileID: 8300000, guid: 9a20886034858874581de731cc501ade, type: 3}
   death: {fileID: 8300000, guid: 26fbc460033afcd4aaf06d8ae778dd78, type: 3}
+  jumpForce: 0
+  isOnGround: 0
+  distance: 0
+  speed: 0
+  groundDetection: {fileID: 0}
 --- !u!82 &-5449623467610814748
 AudioSource:
   m_ObjectHideFlags: 0
@@ -253,3 +259,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b46b1b5c4608e945b56c82fcf1f2faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
