@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jump;
     private bool m_FacingRight = true;
 
-
     void Start()
     {
         _transform = GetComponent(typeof(Transform)) as Transform;
@@ -81,5 +80,4 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(0f, 180f, 0f);
     }
-
 }

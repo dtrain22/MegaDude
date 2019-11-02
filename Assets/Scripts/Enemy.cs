@@ -4,26 +4,59 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private GameObject player;
+    private Transform player;
     public int health = 10;
     public int meleeDamage = 5;
-    private Transform _transform;
-    private Rigidbody2D _rigidbody;
+    private float timeBetweenShots;
+    public float startTimeBetweenShots;
     private AudioPlayerWrapper _audioPlayer;
     public AudioClip chomp;
     public AudioClip death;
+    public GameObject projectile;
+    public bool isFacingRight;
+    public GameObject firePoint;
 
     void Start()
     {
-        player = GameObject.Find("Player");
-        _transform = GetComponent(typeof(Transform)) as Transform;
-        _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+        isFacingRight = true;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
+
     }
 
     void Update()
     {
-       
+        if (gameObject != null && player != null)
+        {
+            if (player.position.x < transform.position.x)
+            {
+                if (isFacingRight)
+                {
+                    Flip();
+                }
+            }
+            else
+            {
+                if (!isFacingRight)
+                {
+                    Flip();
+                }
+            }
+        }
+
+        if (timeBetweenShots <= 0)
+        {
+           var projectileClone = Instantiate(projectile, firePoint.transform.position, Quaternion.identity) as GameObject;
+
+            projectileClone.GetComponent<Renderer>().material.color = Color.red;
+            projectile.GetComponent<Bullet>().owner = gameObject;
+           
+           timeBetweenShots = startTimeBetweenShots;
+        }
+        else
+        {
+            timeBetweenShots -= Time.deltaTime;
+        }
     }
 
     public void takeDamage(int dmg)
@@ -38,5 +71,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        isFacingRight = !isFacingRight;
 
+        transform.Rotate(0f, 180f, 0f);
+    }
 }
