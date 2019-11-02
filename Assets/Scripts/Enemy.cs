@@ -16,6 +16,13 @@ public class Enemy : MonoBehaviour
     public bool isFacingRight;
     public GameObject firePoint;
 
+    public float distance;
+    public float speed;
+
+    private bool movingRight;
+
+    public Transform groundDetection;
+
     void Start()
     {
         isFacingRight = true;
@@ -57,6 +64,22 @@ public class Enemy : MonoBehaviour
         {
             timeBetweenShots -= Time.deltaTime;
         }
+
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+
+       RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+       if(groundInfo.collider == false){
+            if(movingRight == true){
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            } else {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
+
+       }
+
+
     }
 
     public void takeDamage(int dmg)
