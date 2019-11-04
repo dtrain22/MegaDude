@@ -13,11 +13,11 @@ public class Enemy : MonoBehaviour
     public AudioClip chomp;
     public AudioClip death;
 
+    public float jumpForce;
+    public bool isOnGround = false;
     public float distance;
     public float speed;
-
     private bool movingRight;
-
     public Transform groundDetection;
 
     void Start()
@@ -43,7 +43,16 @@ public class Enemy : MonoBehaviour
             }
 
        }
+        Jump();
+    }
 
+    void Jump()
+    {
+        if (isOnGround)
+        {
+           // _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        }
     }
 
     public void Damage(int dmg)
@@ -58,5 +67,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D()
+    {
+        isOnGround = true;
+    }
+
+    void OnCollisionExit2D()
+    {
+        isOnGround = false;
+    }
 
 }
