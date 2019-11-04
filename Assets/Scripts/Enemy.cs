@@ -14,14 +14,10 @@ public class Enemy : MonoBehaviour
     public AudioClip death;
 
     public float jumpForce;
-
     public bool isOnGround = false;
-
     public float distance;
     public float speed;
-
     private bool movingRight;
-
     public Transform groundDetection;
 
     void Start()
