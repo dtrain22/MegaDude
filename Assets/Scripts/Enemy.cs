@@ -16,11 +16,11 @@ public class Enemy : MonoBehaviour
     public bool isFacingRight;
     public GameObject firePoint;
 
+    public float jumpForce;
+    public bool isOnGround = false;
     public float distance;
     public float speed;
-
     private bool movingRight;
-
     public Transform groundDetection;
 
     void Start()
@@ -78,7 +78,17 @@ public class Enemy : MonoBehaviour
             }
 
        }
+        Jump();
+    }
 
+
+
+    void Jump()
+    {
+        if (isOnGround)
+        {
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        }
 
     }
 
@@ -94,11 +104,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
     private void Flip()
     {
         // Switch the way the player is labelled as facing.
-        isFacingRight = !isFacingRight;
-
+        isFacingRight = !isFacingRight; 
         transform.Rotate(0f, 180f, 0f);
     }
+
+    void OnCollisionEnter2D()
+    {
+        isOnGround = true;
+    }
+
+    void OnCollisionExit2D()
+    {
+        isOnGround = false;
+    }
+
 }
