@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour
     private bool movingRight;
     public bool isOnGround = false;
     public bool isFacingRight;
-    public float jumpForce;
     public float distance;
     public float speed;
     public Transform groundDetection;
@@ -32,17 +31,13 @@ public class Enemy : MonoBehaviour
     public float startTimeBetweenShots;
     public bool isShootingType = false;
 
-    //Sound
-    private AudioPlayerWrapper _audioPlayer;
-    public AudioClip chomp;
-    public AudioClip death;
 
     void Start()
     {
 
         player = GameObject.FindGameObjectWithTag("Player");
         Ground = GameObject.FindGameObjectWithTag("Ground");
-        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
+        _audioPlayer = gameObject.AddComponent<AudioSource>();
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         isFacingRight = true;
     }
