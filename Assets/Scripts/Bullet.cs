@@ -28,8 +28,11 @@ public class Bullet : MonoBehaviour
                 rb.velocity = transform.right * speed * -1;
             }
         }
+<<<<<<< HEAD
         else
             rb.velocity = transform.right * speed;
+=======
+>>>>>>> 1579dd6523677166f508db249cc8cdc1fe7fd4f1
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -41,7 +44,11 @@ public class Bullet : MonoBehaviour
         }
         else
         {
+<<<<<<< HEAD
             if (collision.collider.gameObject.tag == "Enemy")
+=======
+            if (collision.collider.gameObject == Enemy)
+>>>>>>> 1579dd6523677166f508db249cc8cdc1fe7fd4f1
             {
                 collision.collider.gameObject.GetComponent<Enemy>().TakeDamage(enemyDamage);
             }
