@@ -11,6 +11,11 @@ public class Enemy : MonoBehaviour
     //Movement
     private GameObject player;
     private Rigidbody2D _rigidbody;
+    private AudioSource _audioPlayer;
+    public AudioClip chomp;
+    public AudioClip death;
+
+    public float jumpForce;
     private bool movingRight;
     public bool isOnGround = false;
     public bool isFacingRight;
@@ -34,12 +39,12 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+
         player = GameObject.FindGameObjectWithTag("Player");
         Ground = GameObject.FindGameObjectWithTag("Ground");
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         isFacingRight = true;
-       
     }
 
     void Update()
@@ -71,7 +76,7 @@ public class Enemy : MonoBehaviour
         health -= dmg;
         if (health > 0)
         {
-            _audioPlayer.PlaySound(chomp, 0.5f);
+            _audioPlayer.PlayOneShot(chomp, 0.5f);
         } else
         {
             Destroy(gameObject);

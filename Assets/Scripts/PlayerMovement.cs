@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpPower = 7.0f;
     private Transform _transform;
     private Rigidbody2D _rigidbody;
-    private AudioPlayerWrapper _audioPlayer;
+    private AudioSource _audioWrapper;
+
     public AudioClip jump;
     private bool m_FacingRight = true;
     private GameObject Ground;
@@ -19,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _transform = GetComponent(typeof(Transform)) as Transform;
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
-        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
+        _audioWrapper = gameObject.AddComponent<AudioSource>();
         Ground = GameObject.FindGameObjectWithTag("Ground");
     }
 
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
-            _audioPlayer.PlaySound(jump);
+            _audioWrapper.PlayOneShot(jump);
         }
     }
    
