@@ -1904,8 +1904,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   CurrentHealth: 0
+  meleeDamage: 5
   Damage: 0
   HealthBar: {fileID: 956057276}
+  InvincibilityLength: 5
 --- !u!114 &2133391901
 MonoBehaviour:
   m_ObjectHideFlags: 0
