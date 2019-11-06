@@ -13,12 +13,14 @@ public class PlayerMovement : MonoBehaviour
     private AudioPlayerWrapper _audioPlayer;
     public AudioClip jump;
     private bool m_FacingRight = true;
+    private GameObject Ground;
 
     void Start()
     {
         _transform = GetComponent(typeof(Transform)) as Transform;
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
+        Ground = GameObject.FindGameObjectWithTag("Ground");
     }
 
     void Update()
@@ -62,10 +64,13 @@ public class PlayerMovement : MonoBehaviour
             _audioPlayer.PlaySound(jump);
         }
     }
-
-    void OnCollisionEnter2D()
+   
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        isOnGround = true;
+        if (collision.collider.gameObject.tag == "Ground") 
+        {
+            isOnGround = true;
+        }
     }
 
     void OnCollisionExit2D()

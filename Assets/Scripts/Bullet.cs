@@ -10,46 +10,42 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject owner;
     public GameObject Enemy;
+    public GameObject Player;
 
     void Start()
     {
-        Enemy = GameObject.FindGameObjectWithTag("Enemy");
+        Enemy = GameObject.Find("Shooting_Enemy");
+        Player = GameObject.FindGameObjectWithTag("Player");
 
-        if(Enemy != null && owner != null && owner.tag == "Enemy")
+        if (Enemy != null && owner != null && owner.tag == "Enemy")
         {
             if (Enemy.GetComponent<Enemy>().isFacingRight)
             {
                 rb.velocity = transform.right * speed;
             }
-            else
+            else if (!Enemy.GetComponent<Enemy>().isFacingRight)
             {
-                rb.velocity = transform.right * speed *-1;
+                rb.velocity = transform.right * speed * -1;
             }
         }
-        else
-        {
-            rb.velocity = transform.right * speed;
-        }
-
-       
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (owner != null && owner.tag == collision.collider.tag)
+        if (owner != null && owner.gameObject == collision.collider.gameObject)
         {
+            Destroy(gameObject);
             return;
         }
         else
         {
-            if (collision.collider.tag == "Enemy")
+            if (collision.collider.gameObject == Enemy)
             {
-                collision.collider.gameObject.GetComponent<Enemy>().takeDamage(enemyDamage);
+                collision.collider.gameObject.GetComponent<Enemy>().TakeDamage(enemyDamage);
             }
 
-            if (collision.collider.tag == "Player")
+            if (collision.collider.gameObject == Player)
             {
-
                 collision.collider.gameObject.GetComponent<PlayerHealth>().Take_Damage(playerDamage);
             }
         }
