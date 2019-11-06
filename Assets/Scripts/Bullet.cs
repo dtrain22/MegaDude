@@ -29,8 +29,11 @@ public class Bullet : MonoBehaviour
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         else
             rb.velocity = transform.right * speed;
+=======
+>>>>>>> 1579dd6523677166f508db249cc8cdc1fe7fd4f1
 =======
 >>>>>>> 1579dd6523677166f508db249cc8cdc1fe7fd4f1
     }
@@ -45,7 +48,11 @@ public class Bullet : MonoBehaviour
         else
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (collision.collider.gameObject.tag == "Enemy")
+=======
+            if (collision.collider.gameObject == Enemy)
+>>>>>>> 1579dd6523677166f508db249cc8cdc1fe7fd4f1
 =======
             if (collision.collider.gameObject == Enemy)
 >>>>>>> 1579dd6523677166f508db249cc8cdc1fe7fd4f1
