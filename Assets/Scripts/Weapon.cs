@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Transform firePoint;
     public GameObject bullet;
-    private PlayerMovement playerMovement; // for bullet direction
     private AudioPlayerWrapper _audioPlayer;
     public AudioClip pewpew;
     public AudioClip bigPew;
@@ -18,7 +18,6 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();
         _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
         _audioPlayer._audioSource.clip = chargeWeapon;
     }
@@ -37,8 +36,7 @@ public class Weapon : MonoBehaviour
         }
         else if (Input.GetButtonUp("Fire1"))
         {
-            var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
-            cloneBullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
+            var cloneBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as GameObject;
 
             float scaleVal;
             int addedDamage = 0;
@@ -62,7 +60,8 @@ public class Weapon : MonoBehaviour
             }
 
             cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
-            cloneBullet.GetComponent<Bullet>().damage += addedDamage;
+            cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
+            cloneBullet.GetComponent<Bullet>().owner = gameObject;
             ButtonReleased();
         } 
     }
