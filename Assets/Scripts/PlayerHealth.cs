@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
 {
     public int health;
     public int CurrentHealth;
-    public int meleeDamage = 5;
     public bool Damage;
     public Slider HealthBar;
     public float InvincibilityLength;
@@ -81,14 +80,5 @@ public class PlayerHealth : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.gameObject.name == "Enemy")
-        {
-            Take_Damage(meleeDamage);
-        }
-    }
-
 }
 
