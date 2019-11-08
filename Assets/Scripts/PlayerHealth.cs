@@ -8,14 +8,20 @@ public class PlayerHealth : MonoBehaviour
 {
     public int health;
     public int CurrentHealth;
-    public int meleeDamage = 5;
     public bool Damage;
     public Slider HealthBar;
-
-    /*private Material FlashWhite;
+    public float InvincibilityLength;
+    private float InvincibilityCounter;
+    public PlayerMovement Player;
+    /*public Color FlashColor;
+    public Color DefaultColor;
+    public float FlashTime;
+    public int NumOfFlashes;
+    public SpriteRenderer Sprite;
+    private Material FlashWhite;
     private Material FlashDefault;
-    SpriteRenderer Sr;
-    Start is called before the first frame update*/
+    SpriteRenderer Sr;*/
+    //Start is called before the first frame update
 
     void Start()
     {
@@ -30,6 +36,10 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         HealthBar.value = CurrentHealth;
+        if (InvincibilityCounter > 0)
+        {
+            InvincibilityCounter -= Time.deltaTime;
+        }
 
         if (gameObject.transform.position.y < -4)
 
@@ -41,27 +51,34 @@ public class PlayerHealth : MonoBehaviour
 
     public void Take_Damage(int amount)
     {
-        CurrentHealth -= amount;
-        HealthBar.value = CurrentHealth;
-
+        if (InvincibilityCounter <= 0)
+        {
+            CurrentHealth -= amount;
+            HealthBar.value = CurrentHealth;
+            InvincibilityCounter = InvincibilityLength;
+        }
+        //StartCoroutine(FlashC());
         if(CurrentHealth <= 0)
         {
             Destroy(gameObject);
             Die();
         }
     }
-
+    /*private IEnumerator FlashC()
+    {
+        int temp = 0;
+        while (temp < NumOfFlashes)
+        {
+            Sprite.color = FlashColor;
+            yield return new WaitForSeconds(FlashTime);
+            Sprite.color = DefaultColor;
+            yield return new WaitForSeconds(FlashTime);
+            temp++;
+        }
+    }*/
     void Die()
     {
         SceneManager.LoadScene("SampleScene");
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.gameObject.name == "Enemy")
-        {
-            Take_Damage(meleeDamage);
-        }
     }
 }
 

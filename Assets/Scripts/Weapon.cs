@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Transform firePoint;
     public GameObject bullet;
     private PlayerMovement playerMovement; // for bullet direction
-    private AudioPlayerWrapper _audioPlayer;
+
+    private AudioSource _oneshotPlayer;
+
     public AudioClip pewpew;
     public AudioClip bigPew;
+    private AudioSource _chargeWeaponPlayer;
     public AudioClip chargeWeapon;
 
     public float chargeTimer = 0;
@@ -19,8 +23,9 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();
-        _audioPlayer = GetComponent(typeof(AudioPlayerWrapper)) as AudioPlayerWrapper;
-        _audioPlayer._audioSource.clip = chargeWeapon;
+        _chargeWeaponPlayer = gameObject.AddComponent<AudioSource>();
+        _chargeWeaponPlayer.clip = chargeWeapon;
+        _oneshotPlayer = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -37,12 +42,11 @@ public class Weapon : MonoBehaviour
         }
         else if (Input.GetButtonUp("Fire1"))
         {
-            var cloneBullet = Instantiate(bullet, gameObject.transform.position, bullet.transform.rotation) as GameObject;
-            cloneBullet.GetComponent<Bullet>().bulletDirection = playerMovement.PlayerDirection;
+            var cloneBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as GameObject;
 
             float scaleVal;
             int addedDamage = 0;
-            _audioPlayer._audioSource.Stop();
+            _chargeWeaponPlayer.Stop();
 
             if (chargeTimer < 2)
             {
@@ -50,7 +54,7 @@ public class Weapon : MonoBehaviour
                 if (chargeTimer > 1)
                     addedDamage += 2;
 
-                _audioPlayer.PlaySound(pewpew);
+                _oneshotPlayer.PlayOneShot(pewpew);
             }
             else
             {
@@ -58,11 +62,12 @@ public class Weapon : MonoBehaviour
                 scaleVal = .26f;
                 addedDamage = 5;
                 cloneBullet.GetComponent<Renderer>().material.color = Color.green;
-                _audioPlayer.PlaySound(bigPew);
+                _oneshotPlayer.PlayOneShot(bigPew);
             }
 
             cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
-            cloneBullet.GetComponent<Bullet>().damage += addedDamage;
+            cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
+            cloneBullet.GetComponent<Bullet>().owner = gameObject;
             ButtonReleased();
         } 
     }
@@ -70,7 +75,8 @@ public class Weapon : MonoBehaviour
     public void HoldButton()
     {
         buttonHeldDown = true;
-        _audioPlayer._audioSource.PlayDelayed(0.08f);
+        // play slightly delayed so player doesn't hear it when bullet spamming
+        _chargeWeaponPlayer.PlayDelayed(0.08f);
     }
 
     public void ButtonReleased()
