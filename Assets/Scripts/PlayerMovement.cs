@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Animator animator;
     public float speed = 5.0f;
     public bool isOnGround = false;
     public float jumpPower = 7.0f;
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void MovePlayer()
     {
         float translate = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        animator.SetFloat("Speed", Mathf.Abs(translate));
 
         if(translate < 0)
         {
@@ -52,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            transform.Translate(translate, 0, 0);
+          //  transform.Translate(translate, 0, 0);
         }
         
     }
