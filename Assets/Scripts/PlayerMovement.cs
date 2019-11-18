@@ -74,9 +74,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionExit2D()
+    void OnCollisionExit2D(Collision2D collision)
     {
-        isOnGround = false;
+
+          if (collision.collider.gameObject.tag == "Ground") 
+        {
+            isOnGround = false;
+        }
+
     }
 
     private void Flip()
