@@ -4,39 +4,54 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public Direction bulletDirection = Direction.RIGHT;
     public float speed = 15.0f;
-    public int damage = 5;
+    public int enemyDamage = 5;
+    public int playerDamage = 15;
+    public Rigidbody2D rb;
+    public GameObject owner;
+    public GameObject Enemy;
+    public GameObject Player;
 
-    public Transform _transform;
-
-    // Start is called before the first frame update
     void Start()
     {
-        _transform = transform;
-    }
+        Enemy = GameObject.Find("Shooting_Enemy");
+        Player = GameObject.FindGameObjectWithTag("Player");
 
-    // Update is called once per frame
-    void Update()
-    {
-        MoveBullet();
-    }
-
-    void MoveBullet()
-    {
-        int moveDirection = bulletDirection == Direction.LEFT ? -1 : 1;
-
-        float translate = moveDirection * speed * Time.deltaTime;
-        _transform.Translate(translate, 0, 0);
+        if (Enemy != null && owner != null && owner.tag == "Enemy")
+        {
+            if (Enemy.GetComponent<Enemy>().isFacingRight)
+            {
+                rb.velocity = transform.right * speed;
+            }
+            else if (!Enemy.GetComponent<Enemy>().isFacingRight)
+            {
+                rb.velocity = transform.right * speed * -1;
+            }
+        }
+        else
+            rb.velocity = transform.right * speed;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Enemy")
+        if (owner != null && owner.gameObject == collision.collider.gameObject)
         {
-            collision.collider.gameObject.GetComponent<Enemy>().Damage(damage);
             Destroy(gameObject);
+            return;
         }
+        else
+        {
+            if (collision.collider.gameObject.tag == "Enemy")
+            {
+                collision.collider.gameObject.GetComponent<Enemy>().TakeDamage(enemyDamage);
+            }
+
+            if (collision.collider.gameObject == Player)
+            {
+                collision.collider.gameObject.GetComponent<PlayerHealth>().Take_Damage(playerDamage);
+            }
+        }
+        Destroy(gameObject);
     }
 
     private void OnBecameInvisible()

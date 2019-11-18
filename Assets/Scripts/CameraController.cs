@@ -10,7 +10,9 @@ public class CameraController : MonoBehaviour
     private float yDist;
     private Vector3 offset;
 
+
     // Start is called before the first frame update
+
     void Start()
     {
         offset = transform.position - player.transform.position;
@@ -18,14 +20,14 @@ public class CameraController : MonoBehaviour
         yDist = offset.y;
         zPos = offset.z;
     }
-
-    // Update is called once per frame
     void LateUpdate()
     {
-        float yPos = player.transform.position.y + yDist;
-        float xPos = player.transform.position.x + xDist;
-        offset.Set(xPos, yPos, zPos);
-
-        transform.position = offset;
+        if (player != null)
+        {
+            float yPos = player.transform.position.y + yDist;
+            float xPos = player.transform.position.x + xDist;
+            offset.Set(xPos, yPos, zPos);
+            transform.position = offset;
+        }
     }
 }
