@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 41738451}
   m_Layer: 0
   m_Name: GL Platform 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 42165319}
   m_Layer: 0
   m_Name: GL Floor 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 54240351}
   m_Layer: 0
   m_Name: Floor 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 55571504}
   m_Layer: 0
   m_Name: GL Platform 17
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -765,7 +765,7 @@ GameObject:
   - component: {fileID: 78674434}
   m_Layer: 0
   m_Name: Cave Platform 7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -867,7 +867,7 @@ GameObject:
   - component: {fileID: 88034321}
   m_Layer: 0
   m_Name: 1st Platform Section - Cave
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1068,7 @@ GameObject:
   - component: {fileID: 110584115}
   m_Layer: 0
   m_Name: Additional Platform - GL 15
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 126582057}
   m_Layer: 0
   m_Name: Cave Platform 9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1387,7 +1387,7 @@ GameObject:
   - component: {fileID: 185858788}
   m_Layer: 0
   m_Name: Floor 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1492,7 +1492,7 @@ GameObject:
   - component: {fileID: 204689567}
   m_Layer: 0
   m_Name: GL End Platform 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1774,7 +1774,7 @@ GameObject:
   - component: {fileID: 273830288}
   m_Layer: 0
   m_Name: GL Platform 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1879,7 +1879,7 @@ GameObject:
   - component: {fileID: 290677347}
   m_Layer: 0
   m_Name: Additional Platform - GL 12
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 295793529}
   m_Layer: 0
   m_Name: Additional Platform - GL 13
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2186,7 +2186,7 @@ GameObject:
   - component: {fileID: 360566676}
   m_Layer: 0
   m_Name: GL Platform 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2396,7 +2396,7 @@ GameObject:
   - component: {fileID: 377659433}
   m_Layer: 0
   m_Name: Cave Platform 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2501,7 +2501,7 @@ GameObject:
   - component: {fileID: 420470620}
   m_Layer: 0
   m_Name: GL Platform 14
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2606,7 +2606,7 @@ GameObject:
   - component: {fileID: 456889400}
   m_Layer: 0
   m_Name: Additional Platform - GL 8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2711,7 +2711,7 @@ GameObject:
   - component: {fileID: 462971992}
   m_Layer: 0
   m_Name: Cave Platform 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2816,7 +2816,7 @@ GameObject:
   - component: {fileID: 476035639}
   m_Layer: 0
   m_Name: Cave Platform 12
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2921,7 +2921,7 @@ GameObject:
   - component: {fileID: 535323453}
   m_Layer: 0
   m_Name: Cave Platform 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3068,7 +3068,7 @@ GameObject:
   - component: {fileID: 560492671}
   m_Layer: 0
   m_Name: GL Platform 13
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3173,7 +3173,7 @@ GameObject:
   - component: {fileID: 569849715}
   m_Layer: 0
   m_Name: Cave Platform 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3311,7 +3311,7 @@ GameObject:
   - component: {fileID: 577165936}
   m_Layer: 0
   m_Name: Well Wall 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3519,7 +3519,7 @@ GameObject:
   - component: {fileID: 618107450}
   m_Layer: 0
   m_Name: Cave Platform 9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3624,7 +3624,7 @@ GameObject:
   - component: {fileID: 635431983}
   m_Layer: 0
   m_Name: Additional Platform - Cave 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3729,7 +3729,7 @@ GameObject:
   - component: {fileID: 645035121}
   m_Layer: 0
   m_Name: GL End Platform 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3864,7 +3864,7 @@ GameObject:
   - component: {fileID: 661435268}
   m_Layer: 0
   m_Name: Cave Platform 15
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3969,7 +3969,7 @@ GameObject:
   - component: {fileID: 662227120}
   m_Layer: 0
   m_Name: Cave Platform 7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4074,7 +4074,7 @@ GameObject:
   - component: {fileID: 663688874}
   m_Layer: 0
   m_Name: Cave Platform 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4179,7 +4179,7 @@ GameObject:
   - component: {fileID: 670706892}
   m_Layer: 0
   m_Name: Cave Floor 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4389,7 +4389,7 @@ GameObject:
   - component: {fileID: 695664517}
   m_Layer: 0
   m_Name: Additional Platform - GL 18
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4530,7 +4530,7 @@ GameObject:
   - component: {fileID: 702368951}
   m_Layer: 0
   m_Name: Additional Platform - GL 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4814,7 +4814,7 @@ GameObject:
   - component: {fileID: 745297857}
   m_Layer: 0
   m_Name: Additional Platform - GL 7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5024,7 +5024,7 @@ GameObject:
   - component: {fileID: 785000778}
   m_Layer: 0
   m_Name: Additional Platform - GL 16
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5129,7 +5129,7 @@ GameObject:
   - component: {fileID: 796944367}
   m_Layer: 0
   m_Name: Cave Platform 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5234,7 +5234,7 @@ GameObject:
   - component: {fileID: 803209635}
   m_Layer: 0
   m_Name: Cave Platform 12
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5339,7 +5339,7 @@ GameObject:
   - component: {fileID: 808347595}
   m_Layer: 0
   m_Name: Cave Platform 11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5580,7 +5580,7 @@ GameObject:
   - component: {fileID: 850739143}
   m_Layer: 0
   m_Name: GL Platform 11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5719,7 +5719,7 @@ GameObject:
   - component: {fileID: 873624326}
   m_Layer: 0
   m_Name: Cave Platform 8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5861,7 +5861,7 @@ GameObject:
   - component: {fileID: 909560302}
   m_Layer: 0
   m_Name: Cave Floor 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5966,7 +5966,7 @@ GameObject:
   - component: {fileID: 927262223}
   m_Layer: 0
   m_Name: Additional Platform - GL 11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6176,7 +6176,7 @@ GameObject:
   - component: {fileID: 961724174}
   m_Layer: 0
   m_Name: GL Platform 16
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6281,7 +6281,7 @@ GameObject:
   - component: {fileID: 970411179}
   m_Layer: 0
   m_Name: Cave Platform 8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6386,7 +6386,7 @@ GameObject:
   - component: {fileID: 996484366}
   m_Layer: 0
   m_Name: Additional Platform - GL 14
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6491,7 +6491,7 @@ GameObject:
   - component: {fileID: 997998006}
   m_Layer: 0
   m_Name: Cave Platform 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6596,7 +6596,7 @@ GameObject:
   - component: {fileID: 1027496002}
   m_Layer: 0
   m_Name: GL Floor 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6701,7 +6701,7 @@ GameObject:
   - component: {fileID: 1043766604}
   m_Layer: 0
   m_Name: GL Floor 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6806,7 +6806,7 @@ GameObject:
   - component: {fileID: 1076709811}
   m_Layer: 0
   m_Name: Additional Platform - GL 9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6911,7 +6911,7 @@ GameObject:
   - component: {fileID: 1116223103}
   m_Layer: 0
   m_Name: GL Platform 9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7016,7 +7016,7 @@ GameObject:
   - component: {fileID: 1121934692}
   m_Layer: 0
   m_Name: Cave Platform 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7121,7 +7121,7 @@ GameObject:
   - component: {fileID: 1132052052}
   m_Layer: 0
   m_Name: Cave Platform 14
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7331,7 +7331,7 @@ GameObject:
   - component: {fileID: 1155819256}
   m_Layer: 0
   m_Name: GL Floor 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7436,7 +7436,7 @@ GameObject:
   - component: {fileID: 1176600068}
   m_Layer: 0
   m_Name: GL Platform 15
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7751,7 +7751,7 @@ GameObject:
   - component: {fileID: 1228942022}
   m_Layer: 0
   m_Name: Cave Platform 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7856,7 +7856,7 @@ GameObject:
   - component: {fileID: 1229883932}
   m_Layer: 0
   m_Name: Additional Platform - GL 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7961,7 +7961,7 @@ GameObject:
   - component: {fileID: 1281146762}
   m_Layer: 0
   m_Name: GL Platform 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8066,7 +8066,7 @@ GameObject:
   - component: {fileID: 1317082077}
   m_Layer: 0
   m_Name: GL Floor 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8171,7 +8171,7 @@ GameObject:
   - component: {fileID: 1333592865}
   m_Layer: 0
   m_Name: Cave Platform 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8276,7 +8276,7 @@ GameObject:
   - component: {fileID: 1341352709}
   m_Layer: 0
   m_Name: Additional Platform - GL 17
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8381,7 +8381,7 @@ GameObject:
   - component: {fileID: 1358012356}
   m_Layer: 0
   m_Name: Additional Platform - GL 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8591,7 +8591,7 @@ GameObject:
   - component: {fileID: 1373615497}
   m_Layer: 0
   m_Name: Additional Platform - Cave 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8732,7 +8732,7 @@ GameObject:
   - component: {fileID: 1395388163}
   m_Layer: 0
   m_Name: Cave Platform 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8870,7 +8870,7 @@ GameObject:
   - component: {fileID: 1424699557}
   m_Layer: 0
   m_Name: GL Platform 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9080,7 +9080,7 @@ GameObject:
   - component: {fileID: 1431329516}
   m_Layer: 0
   m_Name: GL End Platform 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9185,7 +9185,7 @@ GameObject:
   - component: {fileID: 1449495718}
   m_Layer: 0
   m_Name: Additional Platform - GL 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9290,7 +9290,7 @@ GameObject:
   - component: {fileID: 1459859363}
   m_Layer: 0
   m_Name: Cave Platform 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9395,7 +9395,7 @@ GameObject:
   - component: {fileID: 1467749133}
   m_Layer: 0
   m_Name: GL End Platform 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9591,7 +9591,7 @@ GameObject:
   - component: {fileID: 1483276906}
   m_Layer: 0
   m_Name: Cave Platform 10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9913,7 +9913,7 @@ GameObject:
   - component: {fileID: 1571850640}
   m_Layer: 0
   m_Name: Cave Platform 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10018,7 +10018,7 @@ GameObject:
   - component: {fileID: 1571863660}
   m_Layer: 0
   m_Name: Additional Platform - GL 10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10290,7 +10290,7 @@ GameObject:
   - component: {fileID: 1629705273}
   m_Layer: 0
   m_Name: GL Platform 12
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10395,7 +10395,7 @@ GameObject:
   - component: {fileID: 1635895601}
   m_Layer: 0
   m_Name: GL Floor 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10719,7 +10719,7 @@ GameObject:
   - component: {fileID: 1731162236}
   m_Layer: 0
   m_Name: GL Platform 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10824,7 +10824,7 @@ GameObject:
   - component: {fileID: 1744851592}
   m_Layer: 0
   m_Name: Well Wall 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10929,7 +10929,7 @@ GameObject:
   - component: {fileID: 1752728859}
   m_Layer: 0
   m_Name: Cave Platform 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11034,7 +11034,7 @@ GameObject:
   - component: {fileID: 1753625250}
   m_Layer: 0
   m_Name: Cave Platform 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11139,7 +11139,7 @@ GameObject:
   - component: {fileID: 1758847858}
   m_Layer: 0
   m_Name: Additional Platform - Cave 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11349,7 +11349,7 @@ GameObject:
   - component: {fileID: 1785829009}
   m_Layer: 0
   m_Name: GL End Platform 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11454,7 +11454,7 @@ GameObject:
   - component: {fileID: 1786021131}
   m_Layer: 0
   m_Name: Floor 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11559,7 +11559,7 @@ GameObject:
   - component: {fileID: 1801949107}
   m_Layer: 0
   m_Name: GL Platform 10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11664,7 +11664,7 @@ GameObject:
   - component: {fileID: 1808890572}
   m_Layer: 0
   m_Name: GL Platform 7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11838,7 +11838,7 @@ GameObject:
   - component: {fileID: 1920539408}
   m_Layer: 0
   m_Name: Cave Wall 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11943,7 +11943,7 @@ GameObject:
   - component: {fileID: 1921575807}
   m_Layer: 0
   m_Name: Cave Platform 10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12048,7 +12048,7 @@ GameObject:
   - component: {fileID: 1923586423}
   m_Layer: 0
   m_Name: GL Platform 8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12399,7 +12399,7 @@ GameObject:
   - component: {fileID: 1973639729}
   m_Layer: 0
   m_Name: GL End Paltform 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12504,7 +12504,7 @@ GameObject:
   - component: {fileID: 1974124538}
   m_Layer: 0
   m_Name: Cave Platform 13
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12609,7 +12609,7 @@ GameObject:
   - component: {fileID: 1997752072}
   m_Layer: 0
   m_Name: GL Platform 18
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12714,7 +12714,7 @@ GameObject:
   - component: {fileID: 2009278542}
   m_Layer: 0
   m_Name: Cave Platform 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12819,7 +12819,7 @@ GameObject:
   - component: {fileID: 2013831626}
   m_Layer: 0
   m_Name: Cave Platform 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12956,7 +12956,7 @@ GameObject:
   - component: {fileID: 2039326213}
   m_Layer: 0
   m_Name: Cave Platform 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13061,7 +13061,7 @@ GameObject:
   - component: {fileID: 2067945505}
   m_Layer: 0
   m_Name: Cave Platform 7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13166,7 +13166,7 @@ GameObject:
   - component: {fileID: 2068131078}
   m_Layer: 0
   m_Name: Cave Platform 11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13271,7 +13271,7 @@ GameObject:
   - component: {fileID: 2073410784}
   m_Layer: 0
   m_Name: GL Platform 19
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13408,7 +13408,7 @@ GameObject:
   - component: {fileID: 2081186297}
   m_Layer: 0
   m_Name: Additional Platform - GL 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13683,7 +13683,7 @@ GameObject:
   - component: {fileID: 2146959028}
   m_Layer: 0
   m_Name: Additional Platform - GL 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
