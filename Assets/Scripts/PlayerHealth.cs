@@ -81,4 +81,3 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 }
-
