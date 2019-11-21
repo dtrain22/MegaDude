@@ -246,8 +246,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -930,8 +928,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1041687706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,8 +1365,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1564,8 +1558,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1744,28 +1736,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: startTimeBetweenShots
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1082728922}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 202347766}
-    m_RemovedComponents: []
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
 --- !u!4 &1886927149 stripped
 Transform:
@@ -1884,6 +1858,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4850729430016380730}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2133391891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133391890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2da0aaf39f6b164b8fb7bfd169f57de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextScene: Sample Scene
+  LevelEnd: 35
 --- !u!4 &2133391899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
@@ -1904,10 +1892,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   CurrentHealth: 0
-  meleeDamage: 5
   Damage: 0
   HealthBar: {fileID: 956057276}
   InvincibilityLength: 5
+  Player: {fileID: 0}
 --- !u!114 &2133391901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,7 +1908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b46b1b5c4608e945b56c82fcf1f2faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 0}
 --- !u!1001 &4850729430016380730
 PrefabInstance:
   m_ObjectHideFlags: 0
