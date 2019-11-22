@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float translate = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         animator.SetFloat("Speed", Mathf.Abs(translate));
-
+        
         if(translate < 0)
         {
             if (m_FacingRight)
@@ -63,11 +63,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
             _audioWrapper.PlayOneShot(jump);
             animator.SetBool("IsJumping", true);
+            Debug.Log(gameObject.tag);
         }
     }
 

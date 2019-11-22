@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-  
+
         if (buttonHeldDown) {
             chargeTimer += Time.deltaTime * chargeRate;
             growthRate += .01f * .2f;
@@ -40,7 +40,16 @@ public class Weapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             HoldButton();
-            animator.SetBool("IsShooting", true);
+            if (playerMovement.isOnGround == false)
+            {
+                animator.SetBool("IsJumping", true);
+                animator.SetBool("IsShooting", true);
+            }
+            else
+            {
+                animator.SetBool("IsShooting", true);
+                animator.SetBool("IsJumping", false);
+            }
         }
         else if (Input.GetButtonUp("Fire1"))
         {
@@ -49,7 +58,9 @@ public class Weapon : MonoBehaviour
             float scaleVal;
             int addedDamage = 0;
             _chargeWeaponPlayer.Stop();
+
             animator.SetBool("IsShooting", false);
+         
 
             if (chargeTimer < 2)
             {
@@ -75,7 +86,6 @@ public class Weapon : MonoBehaviour
             cloneBullet.GetComponent<Bullet>().owner = gameObject;
             ButtonReleased();
             //animator.SetBool("IsShooting", false);
-
         }
 
     }

@@ -110,9 +110,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  damage: 5
-  _transform: {fileID: 0}
+  enemyDamage: 5
+  playerDamage: 15
   rb: {fileID: 8494696998830299629}
+  owner: {fileID: 0}
+  Enemy: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!50 &8494696998830299629
 Rigidbody2D:
   serializedVersion: 4
