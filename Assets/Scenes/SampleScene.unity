@@ -834,7 +834,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
 --- !u!1 &956057274
 GameObject:
@@ -1399,7 +1400,7 @@ PrefabInstance:
     - target: {fileID: 5226017426478130620, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.6
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130620, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
@@ -1492,7 +1493,8 @@ PrefabInstance:
       propertyPath: startTimeBetweenShots
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
 --- !u!4 &1662150725 stripped
 Transform:
@@ -1735,11 +1737,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 202347766}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
 --- !u!4 &1886927149 stripped
 Transform:
@@ -1872,6 +1880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextScene: Sample Scene
   LevelEnd: 35
+  force: 1
 --- !u!4 &2133391899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
@@ -1896,6 +1905,8 @@ MonoBehaviour:
   HealthBar: {fileID: 956057276}
   InvincibilityLength: 5
   Player: {fileID: 0}
+  FallDeath: -5
+  Scene: 
 --- !u!114 &2133391901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2008,4 +2019,5 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8559198963597825487, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
     - {fileID: -3995860674050082903, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
+    - {fileID: 741903581922702679, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
