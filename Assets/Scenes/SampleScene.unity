@@ -1875,9 +1875,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133391890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc699c0c05cc02843a31cd869843dc0d, type: 3}
+  m_Script: {fileID: 11500000, guid: d2da0aaf39f6b164b8fb7bfd169f57de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextScene: Sample Scene
+  LevelEnd: 35
   force: 1
 --- !u!4 &2133391899 stripped
 Transform:
