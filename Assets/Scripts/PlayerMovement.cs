@@ -91,4 +91,15 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(0f, 180f, 0f);
     }
+
+    public IEnumerator Knockback(float KnockbackDur, float KnockbackPwr, Vector3 KnockbackDir)
+    {
+        float timer = 0;
+        while ( KnockbackDur > timer)
+        {
+            timer+=Time.deltaTime;
+            _rigidbody.AddForce(new Vector2(KnockbackDir.x * -100, KnockbackDir.y * KnockbackPwr));
+        }
+        yield return 0;
+    }
 }
