@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Animator animator;
     public Transform firePoint;
     public GameObject bullet;
     private PlayerMovement playerMovement; // for bullet direction
@@ -39,6 +40,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             HoldButton();
+            animator.SetBool("IsShooting", true);
         }
         else if (Input.GetButtonUp("Fire1"))
         {
@@ -47,6 +49,7 @@ public class Weapon : MonoBehaviour
             float scaleVal;
             int addedDamage = 0;
             _chargeWeaponPlayer.Stop();
+            animator.SetBool("IsShooting", false);
 
             if (chargeTimer < 2)
             {
@@ -55,6 +58,7 @@ public class Weapon : MonoBehaviour
                     addedDamage += 2;
 
                 _oneshotPlayer.PlayOneShot(pewpew);
+                //animator.SetBool("IsShooting", true);
             }
             else
             {
@@ -63,13 +67,17 @@ public class Weapon : MonoBehaviour
                 addedDamage = 5;
                 cloneBullet.GetComponent<Renderer>().material.color = Color.green;
                 _oneshotPlayer.PlayOneShot(bigPew);
+                //animator.SetBool("IsShooting", true);
             }
-
+          
             cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
             cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
             cloneBullet.GetComponent<Bullet>().owner = gameObject;
             ButtonReleased();
-        } 
+            //animator.SetBool("IsShooting", false);
+
+        }
+
     }
 
     public void HoldButton()

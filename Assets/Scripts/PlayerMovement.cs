@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Flip();
             }
+            //animator.SetFloat("Speed", Mathf.Abs(translate));
             _transform.Translate(Mathf.Abs(translate), 0, 0);
         }
         else if (translate > 0)
@@ -50,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Flip();
             }
+            //animator.SetFloat("Speed", Mathf.Abs(translate));
             _transform.Translate(translate, 0, 0);
         }
         else
@@ -65,9 +67,10 @@ public class PlayerMovement : MonoBehaviour
         {
             _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
             _audioWrapper.PlayOneShot(jump);
+            animator.SetBool("IsJumping", true);
         }
     }
-   
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.gameObject.tag == "Ground") 
@@ -79,6 +82,8 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionExit2D()
     {
         isOnGround = false;
+        animator.SetBool("IsJumping", false);
+
     }
 
     private void Flip()
@@ -88,4 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(0f, 180f, 0f);
     }
+
+  
+
 }
