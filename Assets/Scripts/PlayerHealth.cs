@@ -13,6 +13,16 @@ public class PlayerHealth : MonoBehaviour
     public float InvincibilityLength;
     private float InvincibilityCounter;
     public PlayerMovement Player;
+    public int FallDeath;
+    public string Scene;
+    /*public Color FlashColor;
+    public Color DefaultColor;
+    public float FlashTime;
+    public int NumOfFlashes;
+    public SpriteRenderer Sprite;
+    private Material FlashWhite;
+    private Material FlashDefault;
+    SpriteRenderer Sr;*/
 
     //Start is called before the first frame update
 
@@ -32,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
             InvincibilityCounter -= Time.deltaTime;
         }
 
-        if (gameObject.transform.position.y < -4)
+        if (gameObject.transform.position.y < FallDeath)
 
         {
             HealthBar.value = 0;
@@ -59,7 +69,8 @@ public class PlayerHealth : MonoBehaviour
   
     void Die()
     {
-        SceneManager.LoadScene("SampleScene");
+    //   SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(Scene);
     }
 }
 

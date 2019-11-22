@@ -1400,7 +1400,7 @@ PrefabInstance:
     - target: {fileID: 5226017426478130620, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.6
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130620, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
@@ -1903,6 +1903,20 @@ MonoBehaviour:
   HealthBar: {fileID: 956057276}
   InvincibilityLength: 5
   Player: {fileID: 0}
+  FallDeath: -5
+  Scene: 
+--- !u!114 &2133391901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133391890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b46b1b5c4608e945b56c82fcf1f2faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4850729430016380730
 PrefabInstance:
   m_ObjectHideFlags: 0
