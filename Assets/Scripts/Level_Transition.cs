@@ -18,7 +18,7 @@ public class Level_Transition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.position.x < LevelEnd)
+        if (gameObject.transform.position.x > LevelEnd)
         {
             SceneManager.LoadScene(NextScene);
         }
