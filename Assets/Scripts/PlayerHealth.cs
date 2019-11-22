@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public float InvincibilityLength;
     private float InvincibilityCounter;
     public PlayerMovement Player;
+    public int FallDeath;
+    public string Scene;
     /*public Color FlashColor;
     public Color DefaultColor;
     public float FlashTime;
@@ -21,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     private Material FlashWhite;
     private Material FlashDefault;
     SpriteRenderer Sr;*/
+
     //Start is called before the first frame update
 
     void Start()
@@ -28,9 +31,7 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
-        /*Sr = GetComponent<SpriteRenderer>();
-        FlashWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
-        FlashDefault = Sr.material;*/
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     void Update()
@@ -41,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
             InvincibilityCounter -= Time.deltaTime;
         }
 
-        if (gameObject.transform.position.y < -4)
+        if (gameObject.transform.position.y < FallDeath)
 
         {
             HealthBar.value = 0;
@@ -56,29 +57,20 @@ public class PlayerHealth : MonoBehaviour
             CurrentHealth -= amount;
             HealthBar.value = CurrentHealth;
             InvincibilityCounter = InvincibilityLength;
+            StartCoroutine(Player.Knockback(0.02f, 60, Player.transform.position));
         }
-        //StartCoroutine(FlashC());
+        
         if(CurrentHealth <= 0)
         {
             Destroy(gameObject);
             Die();
         }
     }
-    /*private IEnumerator FlashC()
-    {
-        int temp = 0;
-        while (temp < NumOfFlashes)
-        {
-            Sprite.color = FlashColor;
-            yield return new WaitForSeconds(FlashTime);
-            Sprite.color = DefaultColor;
-            yield return new WaitForSeconds(FlashTime);
-            temp++;
-        }
-    }*/
+  
     void Die()
     {
-        SceneManager.LoadScene("SampleScene");
+    //   SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(Scene);
     }
 }
 

@@ -81,10 +81,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionExit2D()
+    void OnCollisionExit2D(Collision2D collision)
     {
         isOnGround = false;
         animator.SetBool("IsJumping", false);
+
+          if (collision.collider.gameObject.tag == "Ground") 
+        {
+            isOnGround = false;
+        }
+
 
     }
 
@@ -96,6 +102,14 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-  
-
+    public IEnumerator Knockback(float KnockbackDur, float KnockbackPwr, Vector3 KnockbackDir)
+    {
+        float timer = 0;
+        while ( KnockbackDur > timer)
+        {
+            timer+=Time.deltaTime;
+            _rigidbody.AddForce(new Vector2(KnockbackDir.x * -100, KnockbackDir.y * KnockbackPwr));
+        }
+        yield return 0;
+    }
 }
