@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Animator animator;
     public Transform firePoint;
     public GameObject bullet;
     private PlayerMovement playerMovement; // for bullet direction
@@ -30,7 +31,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-  
+
         if (buttonHeldDown) {
             chargeTimer += Time.deltaTime * chargeRate;
             growthRate += .01f * .2f;
@@ -39,6 +40,16 @@ public class Weapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             HoldButton();
+            if (playerMovement.isOnGround == false)
+            {
+                animator.SetBool("IsJumping", true);
+                animator.SetBool("IsShooting", true);
+            }
+            else
+            {
+                animator.SetBool("IsShooting", true);
+                animator.SetBool("IsJumping", false);
+            }
         }
         else if (Input.GetButtonUp("Fire1"))
         {
@@ -48,6 +59,9 @@ public class Weapon : MonoBehaviour
             int addedDamage = 0;
             _chargeWeaponPlayer.Stop();
 
+            animator.SetBool("IsShooting", false);
+         
+
             if (chargeTimer < 2)
             {
                 scaleVal = growthRate; // scale bullet size
@@ -55,6 +69,7 @@ public class Weapon : MonoBehaviour
                     addedDamage += 2;
 
                 _oneshotPlayer.PlayOneShot(pewpew);
+                //animator.SetBool("IsShooting", true);
             }
             else
             {
@@ -63,13 +78,16 @@ public class Weapon : MonoBehaviour
                 addedDamage = 5;
                 cloneBullet.GetComponent<Renderer>().material.color = Color.green;
                 _oneshotPlayer.PlayOneShot(bigPew);
+                //animator.SetBool("IsShooting", true);
             }
-
+          
             cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
             cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
             cloneBullet.GetComponent<Bullet>().owner = gameObject;
             ButtonReleased();
-        } 
+            //animator.SetBool("IsShooting", false);
+        }
+
     }
 
     public void HoldButton()
