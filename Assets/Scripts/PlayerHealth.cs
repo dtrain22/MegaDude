@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider HealthBar;
     public float InvincibilityLength;
     private float InvincibilityCounter;
-    public PlayerMovement Player;
+    public PlayerMove Player;
     public int FallDeath;
     public string Scene;
 
@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
     }
 
     void Update()
@@ -47,7 +47,7 @@ public class PlayerHealth : MonoBehaviour
             CurrentHealth -= amount;
             HealthBar.value = CurrentHealth;
             InvincibilityCounter = InvincibilityLength;
-            StartCoroutine(Player.Knockback(0.02f, 60, Player.transform.position));
+            //StartCoroutine(Player.Knockback(0.02f, 60, Player.transform.position));
         }
         
         if(CurrentHealth <= 0)
