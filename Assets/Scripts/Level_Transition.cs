@@ -9,7 +9,7 @@ public class Level_Transition : MonoBehaviour
     public int endOfLevel = 390;
     private string grassLevel = "First Level Design";
     private string lavaLevel = "LavaLevel";
-    private string menu = "MainMenu";
+    private string menu = "Menu";
 
     void Update()
     {
@@ -28,6 +28,7 @@ public class Level_Transition : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == lavaLevel)
         {
+            
             if (gameObject.transform.position.x > endOfLevel)
             {
                 SceneManager.LoadScene(menu);
