@@ -19,7 +19,6 @@ public class PlayerMove : MonoBehaviour
 
     //from player movement
     public AudioClip jump;
-    private Rigidbody2D _rigidbody;
     private AudioSource _audioWrapper;
     public Animator animator;
     private bool m_FacingRight = true;
@@ -30,7 +29,6 @@ public class PlayerMove : MonoBehaviour
     {
         //from player movement
         _audioWrapper = gameObject.AddComponent<AudioSource>();
-        _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
 
 
         controller = GetComponent<Controller2D>();
