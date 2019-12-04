@@ -13,7 +13,7 @@ public class Level_Transition : MonoBehaviour
 
     void Update()
     {
-        endOfLevel = SceneManager.GetActiveScene().name == grassLevel ? 390 : 25;
+        endOfLevel = SceneManager.GetActiveScene().name == grassLevel ? 390 : 400;
         SceneHandler();
     }
 
@@ -28,7 +28,6 @@ public class Level_Transition : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == lavaLevel)
         {
-            
             if (gameObject.transform.position.x > endOfLevel)
             {
                 SceneManager.LoadScene(menu);

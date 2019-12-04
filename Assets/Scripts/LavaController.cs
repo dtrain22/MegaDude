@@ -27,4 +27,11 @@ public class LavaController : MonoBehaviour
             transform.position = move;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.gameObject.tag == "Player")
+        {
+            collision.collider.gameObject.GetComponent<PlayerHealth>().Die();
+        }
+    }
 }

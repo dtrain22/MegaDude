@@ -456,8 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad17acafd2940949b953eee9d8d253a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minHeight: 0
-  maxHeight: 0
+  minHeight: -3
+  maxHeight: 7
   goingDown: 0
 --- !u!61 &204681995
 BoxCollider2D:

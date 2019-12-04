@@ -57,10 +57,9 @@ public class PlayerHealth : MonoBehaviour
         }
     }
   
-    void Die()
+    public void Die()
     {
-    //   SceneManager.LoadScene("SampleScene");
-        SceneManager.LoadScene(Scene);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
