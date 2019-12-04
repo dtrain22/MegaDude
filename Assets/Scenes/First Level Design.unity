@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24605557}
   - component: {fileID: 24605558}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 41738453}
   - component: {fileID: 41738452}
   - component: {fileID: 41738451}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 42165321}
   - component: {fileID: 42165320}
   - component: {fileID: 42165319}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Floor 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 54240353}
   - component: {fileID: 54240352}
   - component: {fileID: 54240351}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 55571506}
   - component: {fileID: 55571505}
   - component: {fileID: 55571504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 17
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 76284013}
   - component: {fileID: 76284015}
   - component: {fileID: 76284014}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 78674436}
   - component: {fileID: 78674435}
   - component: {fileID: 78674434}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 110584117}
   - component: {fileID: 110584116}
   - component: {fileID: 110584115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1172,7 +1172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120210604}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 126582059}
   - component: {fileID: 126582058}
   - component: {fileID: 126582057}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1375,7 +1375,7 @@ GameObject:
   - component: {fileID: 168754232}
   - component: {fileID: 168754234}
   - component: {fileID: 168754233}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 185858790}
   - component: {fileID: 185858789}
   - component: {fileID: 185858788}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1556,7 +1556,7 @@ GameObject:
   - component: {fileID: 204689569}
   - component: {fileID: 204689568}
   - component: {fileID: 204689567}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL End Platform 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 224841261}
   - component: {fileID: 224841260}
   - component: {fileID: 224841259}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1823,7 @@ Transform:
   - {fileID: 697077746}
   - {fileID: 1601331229}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257171357
 GameObject:
@@ -1860,7 +1860,7 @@ Transform:
   - {fileID: 552344460}
   - {fileID: 882289909}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &273830286
 GameObject:
@@ -1874,7 +1874,7 @@ GameObject:
   - component: {fileID: 273830290}
   - component: {fileID: 273830289}
   - component: {fileID: 273830288}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2013,7 +2013,7 @@ GameObject:
   - component: {fileID: 290677349}
   - component: {fileID: 290677348}
   - component: {fileID: 290677347}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2118,7 +2118,7 @@ GameObject:
   - component: {fileID: 295793531}
   - component: {fileID: 295793530}
   - component: {fileID: 295793529}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f82dd743f09744aaed5977fd704f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2032925967}
+  player: {fileID: 996882214}
 --- !u!1001 &334345204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2487,7 +2487,7 @@ GameObject:
   - component: {fileID: 360566678}
   - component: {fileID: 360566677}
   - component: {fileID: 360566676}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2592,7 +2592,7 @@ GameObject:
   - component: {fileID: 366405529}
   - component: {fileID: 366405528}
   - component: {fileID: 366405527}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Ceiling 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 377659435}
   - component: {fileID: 377659434}
   - component: {fileID: 377659433}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 420470622}
   - component: {fileID: 420470621}
   - component: {fileID: 420470620}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3145,7 +3145,7 @@ GameObject:
   - component: {fileID: 456889402}
   - component: {fileID: 456889401}
   - component: {fileID: 456889400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3334,7 +3334,7 @@ GameObject:
   - component: {fileID: 462971994}
   - component: {fileID: 462971993}
   - component: {fileID: 462971992}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3475,7 +3475,7 @@ GameObject:
   - component: {fileID: 476035641}
   - component: {fileID: 476035640}
   - component: {fileID: 476035639}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3642,7 +3642,7 @@ GameObject:
   - component: {fileID: 535323455}
   - component: {fileID: 535323454}
   - component: {fileID: 535323453}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3789,7 +3789,7 @@ GameObject:
   - component: {fileID: 560492673}
   - component: {fileID: 560492672}
   - component: {fileID: 560492671}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3924,7 +3924,7 @@ GameObject:
   - component: {fileID: 569849717}
   - component: {fileID: 569849716}
   - component: {fileID: 569849715}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4062,7 +4062,7 @@ GameObject:
   - component: {fileID: 577165938}
   - component: {fileID: 577165937}
   - component: {fileID: 577165936}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Well Wall 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4467,7 +4467,7 @@ GameObject:
   - component: {fileID: 614465364}
   - component: {fileID: 614465366}
   - component: {fileID: 614465365}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4573,7 +4573,7 @@ GameObject:
   - component: {fileID: 618107452}
   - component: {fileID: 618107451}
   - component: {fileID: 618107450}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4678,7 +4678,7 @@ GameObject:
   - component: {fileID: 635431985}
   - component: {fileID: 635431984}
   - component: {fileID: 635431983}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - Cave 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4813,7 +4813,7 @@ GameObject:
   - component: {fileID: 645035123}
   - component: {fileID: 645035122}
   - component: {fileID: 645035121}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL End Platform 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5035,7 +5035,7 @@ GameObject:
   - component: {fileID: 661435270}
   - component: {fileID: 661435269}
   - component: {fileID: 661435268}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5140,7 +5140,7 @@ GameObject:
   - component: {fileID: 662227122}
   - component: {fileID: 662227121}
   - component: {fileID: 662227120}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5245,7 +5245,7 @@ GameObject:
   - component: {fileID: 663688876}
   - component: {fileID: 663688875}
   - component: {fileID: 663688874}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5380,7 +5380,7 @@ GameObject:
   - component: {fileID: 670706894}
   - component: {fileID: 670706893}
   - component: {fileID: 670706892}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Floor 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5569,7 +5569,7 @@ GameObject:
   - component: {fileID: 691593396}
   - component: {fileID: 691593395}
   - component: {fileID: 691593394}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5704,7 +5704,7 @@ GameObject:
   - component: {fileID: 695664519}
   - component: {fileID: 695664518}
   - component: {fileID: 695664517}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 18
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5797,6 +5797,90 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695664515}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &695859241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_Name
+      value: MegaDude
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.837
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.862
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431733, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: FallDeath
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431733, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: Scene
+      value: First Level Design
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142583525123431733, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: HealthBar
+      value: 
+      objectReference: {fileID: 24605558}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
 --- !u!1 &697077745
 GameObject:
   m_ObjectHideFlags: 0
@@ -5845,7 +5929,7 @@ GameObject:
   - component: {fileID: 702368953}
   - component: {fileID: 702368952}
   - component: {fileID: 702368951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6015,7 +6099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707560282}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: HealthUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6054,7 +6138,7 @@ GameObject:
   - component: {fileID: 736261675}
   - component: {fileID: 736261674}
   - component: {fileID: 736261673}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6159,7 +6243,7 @@ GameObject:
   - component: {fileID: 745297859}
   - component: {fileID: 745297858}
   - component: {fileID: 745297857}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6264,7 +6348,7 @@ GameObject:
   - component: {fileID: 780925394}
   - component: {fileID: 780925393}
   - component: {fileID: 780925392}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Well Wall 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6369,7 +6453,7 @@ GameObject:
   - component: {fileID: 785000780}
   - component: {fileID: 785000779}
   - component: {fileID: 785000778}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6474,7 +6558,7 @@ GameObject:
   - component: {fileID: 796944369}
   - component: {fileID: 796944368}
   - component: {fileID: 796944367}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6579,7 +6663,7 @@ GameObject:
   - component: {fileID: 803209637}
   - component: {fileID: 803209636}
   - component: {fileID: 803209635}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6768,7 +6852,7 @@ GameObject:
   - component: {fileID: 808347597}
   - component: {fileID: 808347596}
   - component: {fileID: 808347595}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6904,7 +6988,7 @@ GameObject:
   - component: {fileID: 835774649}
   - component: {fileID: 835774648}
   - component: {fileID: 835774647}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7009,7 +7093,7 @@ GameObject:
   - component: {fileID: 850739145}
   - component: {fileID: 850739144}
   - component: {fileID: 850739143}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7148,7 +7232,7 @@ GameObject:
   - component: {fileID: 873624328}
   - component: {fileID: 873624327}
   - component: {fileID: 873624326}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7350,7 +7434,7 @@ GameObject:
   - component: {fileID: 909560304}
   - component: {fileID: 909560303}
   - component: {fileID: 909560302}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Floor 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7485,7 +7569,7 @@ GameObject:
   - component: {fileID: 927262225}
   - component: {fileID: 927262224}
   - component: {fileID: 927262223}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7590,7 +7674,7 @@ GameObject:
   - component: {fileID: 960140592}
   - component: {fileID: 960140591}
   - component: {fileID: 960140590}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7695,7 +7779,7 @@ GameObject:
   - component: {fileID: 961724176}
   - component: {fileID: 961724175}
   - component: {fileID: 961724174}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7800,7 +7884,7 @@ GameObject:
   - component: {fileID: 970411181}
   - component: {fileID: 970411180}
   - component: {fileID: 970411179}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7905,7 +7989,7 @@ GameObject:
   - component: {fileID: 996484368}
   - component: {fileID: 996484367}
   - component: {fileID: 996484366}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7998,6 +8082,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996484364}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &996882214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 695859241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &997998004
 GameObject:
   m_ObjectHideFlags: 0
@@ -8010,7 +8100,7 @@ GameObject:
   - component: {fileID: 997998008}
   - component: {fileID: 997998007}
   - component: {fileID: 997998006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8199,7 +8289,7 @@ GameObject:
   - component: {fileID: 1027496004}
   - component: {fileID: 1027496003}
   - component: {fileID: 1027496002}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Floor 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8304,7 +8394,7 @@ GameObject:
   - component: {fileID: 1043766606}
   - component: {fileID: 1043766605}
   - component: {fileID: 1043766604}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Floor 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8445,7 +8535,7 @@ GameObject:
   - component: {fileID: 1076709813}
   - component: {fileID: 1076709812}
   - component: {fileID: 1076709811}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8580,7 +8670,7 @@ GameObject:
   - component: {fileID: 1116223105}
   - component: {fileID: 1116223104}
   - component: {fileID: 1116223103}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8685,7 +8775,7 @@ GameObject:
   - component: {fileID: 1121934694}
   - component: {fileID: 1121934693}
   - component: {fileID: 1121934692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8881,7 +8971,7 @@ GameObject:
   - component: {fileID: 1132052054}
   - component: {fileID: 1132052053}
   - component: {fileID: 1132052052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9121,7 +9211,7 @@ GameObject:
   - component: {fileID: 1155819258}
   - component: {fileID: 1155819257}
   - component: {fileID: 1155819256}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Floor 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9310,7 +9400,7 @@ GameObject:
   - component: {fileID: 1176600070}
   - component: {fileID: 1176600069}
   - component: {fileID: 1176600068}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9475,7 +9565,7 @@ GameObject:
   - component: {fileID: 1219979680}
   - component: {fileID: 1219979679}
   - component: {fileID: 1219979678}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9580,7 +9670,7 @@ GameObject:
   - component: {fileID: 1227046878}
   - component: {fileID: 1227046877}
   - component: {fileID: 1227046876}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Ceiling 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9685,7 +9775,7 @@ GameObject:
   - component: {fileID: 1228942024}
   - component: {fileID: 1228942023}
   - component: {fileID: 1228942022}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9790,7 +9880,7 @@ GameObject:
   - component: {fileID: 1229883934}
   - component: {fileID: 1229883933}
   - component: {fileID: 1229883932}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9895,7 +9985,7 @@ GameObject:
   - component: {fileID: 1281146764}
   - component: {fileID: 1281146763}
   - component: {fileID: 1281146762}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10032,7 +10122,7 @@ GameObject:
   - component: {fileID: 1317082079}
   - component: {fileID: 1317082078}
   - component: {fileID: 1317082077}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Floor 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10137,7 +10227,7 @@ GameObject:
   - component: {fileID: 1333592867}
   - component: {fileID: 1333592866}
   - component: {fileID: 1333592865}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10242,7 +10332,7 @@ GameObject:
   - component: {fileID: 1341352711}
   - component: {fileID: 1341352710}
   - component: {fileID: 1341352709}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 17
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10387,7 +10477,7 @@ GameObject:
   - component: {fileID: 1358012358}
   - component: {fileID: 1358012357}
   - component: {fileID: 1358012356}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10627,7 +10717,7 @@ GameObject:
   - component: {fileID: 1373615499}
   - component: {fileID: 1373615498}
   - component: {fileID: 1373615497}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - Cave 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10768,7 +10858,7 @@ GameObject:
   - component: {fileID: 1395388165}
   - component: {fileID: 1395388164}
   - component: {fileID: 1395388163}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10898,7 +10988,7 @@ Transform:
   - {fileID: 705826097}
   - {fileID: 1384983727}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1424699555
 GameObject:
@@ -10912,7 +11002,7 @@ GameObject:
   - component: {fileID: 1424699559}
   - component: {fileID: 1424699558}
   - component: {fileID: 1424699557}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11017,7 +11107,7 @@ GameObject:
   - component: {fileID: 1428529405}
   - component: {fileID: 1428529404}
   - component: {fileID: 1428529403}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11122,7 +11212,7 @@ GameObject:
   - component: {fileID: 1431329518}
   - component: {fileID: 1431329517}
   - component: {fileID: 1431329516}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL End Platform 6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11227,7 +11317,7 @@ GameObject:
   - component: {fileID: 1449495720}
   - component: {fileID: 1449495719}
   - component: {fileID: 1449495718}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11332,7 +11422,7 @@ GameObject:
   - component: {fileID: 1459859365}
   - component: {fileID: 1459859364}
   - component: {fileID: 1459859363}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11437,7 +11527,7 @@ GameObject:
   - component: {fileID: 1467749135}
   - component: {fileID: 1467749134}
   - component: {fileID: 1467749133}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL End Platform 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11619,7 +11709,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 56.174004, y: -0.007, z: 36.996002}
 --- !u!1001 &1478583861
 PrefabInstance:
@@ -11734,7 +11824,7 @@ GameObject:
   - component: {fileID: 1483276908}
   - component: {fileID: 1483276907}
   - component: {fileID: 1483276906}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11839,7 +11929,7 @@ GameObject:
   - component: {fileID: 1510755620}
   - component: {fileID: 1510755619}
   - component: {fileID: 1510755618}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Well Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11981,7 +12071,7 @@ GameObject:
   - component: {fileID: 1556755970}
   - component: {fileID: 1556755969}
   - component: {fileID: 1556755968}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12073,7 +12163,7 @@ RectTransform:
   m_Children:
   - {fileID: 707560282}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12092,7 +12182,7 @@ GameObject:
   - component: {fileID: 1571850642}
   - component: {fileID: 1571850641}
   - component: {fileID: 1571850640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12197,7 +12287,7 @@ GameObject:
   - component: {fileID: 1571863662}
   - component: {fileID: 1571863661}
   - component: {fileID: 1571863660}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12290,36 +12380,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571863658}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1593909764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1593909765}
-  m_Layer: 10
-  m_Name: firePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1593909765
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593909764}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3899999, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2032925976}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601331228
 GameObject:
   m_ObjectHideFlags: 0
@@ -12469,7 +12529,7 @@ GameObject:
   - component: {fileID: 1629705275}
   - component: {fileID: 1629705274}
   - component: {fileID: 1629705273}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12574,7 +12634,7 @@ GameObject:
   - component: {fileID: 1635895603}
   - component: {fileID: 1635895602}
   - component: {fileID: 1635895601}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Floor 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12706,101 +12766,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 595928446}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1713620938
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4850729429313601159, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.9000187
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601156, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850729429313601273, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: isOnGround
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4223254855293512881, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1593909765}
-    - target: {fileID: 4223254855293512881, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: bigPew
-      value: 
-      objectReference: {fileID: 8300000, guid: 3553c5d800cc6cb468beef19f9ecd655, type: 3}
-    - target: {fileID: 4223254855293512881, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-        type: 3}
-      propertyPath: chargeWeapon
-      value: 
-      objectReference: {fileID: 8300000, guid: c6498d02597416249834e1e6905c2906, type: 3}
-    m_RemovedComponents:
-    - {fileID: 741903581922702679, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634, type: 3}
 --- !u!1 &1731061277
 GameObject:
   m_ObjectHideFlags: 0
@@ -12813,7 +12778,7 @@ GameObject:
   - component: {fileID: 1731061281}
   - component: {fileID: 1731061280}
   - component: {fileID: 1731061279}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12918,7 +12883,7 @@ GameObject:
   - component: {fileID: 1731162238}
   - component: {fileID: 1731162237}
   - component: {fileID: 1731162236}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13023,7 +12988,7 @@ GameObject:
   - component: {fileID: 1744851594}
   - component: {fileID: 1744851593}
   - component: {fileID: 1744851592}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Well Wall 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13128,7 +13093,7 @@ GameObject:
   - component: {fileID: 1752728861}
   - component: {fileID: 1752728860}
   - component: {fileID: 1752728859}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13233,7 +13198,7 @@ GameObject:
   - component: {fileID: 1753625252}
   - component: {fileID: 1753625251}
   - component: {fileID: 1753625250}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13338,7 +13303,7 @@ GameObject:
   - component: {fileID: 1758847860}
   - component: {fileID: 1758847859}
   - component: {fileID: 1758847858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - Cave 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13443,7 +13408,7 @@ GameObject:
   - component: {fileID: 1764361001}
   - component: {fileID: 1764361000}
   - component: {fileID: 1764360999}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13548,7 +13513,7 @@ GameObject:
   - component: {fileID: 1785829011}
   - component: {fileID: 1785829010}
   - component: {fileID: 1785829009}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL End Platform 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13653,7 +13618,7 @@ GameObject:
   - component: {fileID: 1786021133}
   - component: {fileID: 1786021132}
   - component: {fileID: 1786021131}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13758,7 +13723,7 @@ GameObject:
   - component: {fileID: 1801949109}
   - component: {fileID: 1801949108}
   - component: {fileID: 1801949107}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13863,7 +13828,7 @@ GameObject:
   - component: {fileID: 1808890574}
   - component: {fileID: 1808890573}
   - component: {fileID: 1808890572}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13965,7 +13930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827972855}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14023,7 +13988,7 @@ Transform:
   - {fileID: 659937250}
   - {fileID: 1639763666}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896778770
 GameObject:
@@ -14067,7 +14032,7 @@ GameObject:
   - component: {fileID: 1920539410}
   - component: {fileID: 1920539409}
   - component: {fileID: 1920539408}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Wall 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14172,7 +14137,7 @@ GameObject:
   - component: {fileID: 1921575809}
   - component: {fileID: 1921575808}
   - component: {fileID: 1921575807}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14277,7 +14242,7 @@ GameObject:
   - component: {fileID: 1923586425}
   - component: {fileID: 1923586424}
   - component: {fileID: 1923586423}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14418,7 +14383,7 @@ GameObject:
   - component: {fileID: 1965456936}
   - component: {fileID: 1965456935}
   - component: {fileID: 1965456934}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Filler Block 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14523,7 +14488,7 @@ GameObject:
   - component: {fileID: 1967977325}
   - component: {fileID: 1967977324}
   - component: {fileID: 1967977323}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Well Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14628,7 +14593,7 @@ GameObject:
   - component: {fileID: 1973639731}
   - component: {fileID: 1973639730}
   - component: {fileID: 1973639729}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL End Paltform 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14733,7 +14698,7 @@ GameObject:
   - component: {fileID: 1974124540}
   - component: {fileID: 1974124539}
   - component: {fileID: 1974124538}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14844,7 +14809,7 @@ GameObject:
   - component: {fileID: 1997752074}
   - component: {fileID: 1997752073}
   - component: {fileID: 1997752072}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 18
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14949,7 +14914,7 @@ GameObject:
   - component: {fileID: 2009278544}
   - component: {fileID: 2009278543}
   - component: {fileID: 2009278542}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15054,7 +15019,7 @@ GameObject:
   - component: {fileID: 2013831628}
   - component: {fileID: 2013831627}
   - component: {fileID: 2013831626}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15183,38 +15148,6 @@ Transform:
   m_Father: {fileID: 229124821}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2032925967 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4850729429313601159, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-    type: 3}
-  m_PrefabInstance: {fileID: 1713620938}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2032925968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032925967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d47dd006015409428db5c04dd8b6f42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  CurrentHealth: 0
-  Damage: 0
-  HealthBar: {fileID: 24605558}
-  InvincibilityLength: 0
-  Player: {fileID: 0}
-  FallDeath: -103
-  Scene: First Level Design
---- !u!4 &2032925976 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4850729429313601272, guid: 1bcd3b9ee0ffa51408b1ecbdbb608634,
-    type: 3}
-  m_PrefabInstance: {fileID: 1713620938}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2039326211
 GameObject:
   m_ObjectHideFlags: 0
@@ -15227,7 +15160,7 @@ GameObject:
   - component: {fileID: 2039326215}
   - component: {fileID: 2039326214}
   - component: {fileID: 2039326213}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15332,7 +15265,7 @@ GameObject:
   - component: {fileID: 2067945507}
   - component: {fileID: 2067945506}
   - component: {fileID: 2067945505}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15437,7 +15370,7 @@ GameObject:
   - component: {fileID: 2068131080}
   - component: {fileID: 2068131079}
   - component: {fileID: 2068131078}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cave Platform 11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15542,7 +15475,7 @@ GameObject:
   - component: {fileID: 2073410786}
   - component: {fileID: 2073410785}
   - component: {fileID: 2073410784}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GL Platform 19
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15679,7 +15612,7 @@ GameObject:
   - component: {fileID: 2081186299}
   - component: {fileID: 2081186298}
   - component: {fileID: 2081186297}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15835,7 +15768,7 @@ Transform:
   - {fileID: 635431982}
   - {fileID: 1758847857}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102636666
 GameObject:
@@ -15849,7 +15782,7 @@ GameObject:
   - component: {fileID: 2102636670}
   - component: {fileID: 2102636669}
   - component: {fileID: 2102636668}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Well Wall 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16044,7 +15977,7 @@ GameObject:
   - component: {fileID: 2146959030}
   - component: {fileID: 2146959029}
   - component: {fileID: 2146959028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Additional Platform - GL 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
