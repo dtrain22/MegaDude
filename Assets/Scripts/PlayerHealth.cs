@@ -15,16 +15,6 @@ public class PlayerHealth : MonoBehaviour
     public PlayerMovement Player;
     public int FallDeath;
     public string Scene;
-    /*public Color FlashColor;
-    public Color DefaultColor;
-    public float FlashTime;
-    public int NumOfFlashes;
-    public SpriteRenderer Sprite;
-    private Material FlashWhite;
-    private Material FlashDefault;
-    SpriteRenderer Sr;*/
-
-    //Start is called before the first frame update
 
     void Start()
     {

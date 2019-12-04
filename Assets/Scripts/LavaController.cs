@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LavaController : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public float currentHeight;
     public float maxHeight;
     private Vector3 move;
@@ -12,6 +12,7 @@ public class LavaController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         currentHeight = transform.position.y;
         maxHeight = 37;
     }

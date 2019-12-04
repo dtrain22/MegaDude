@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         Ground = GameObject.FindGameObjectWithTag("Ground");
     }
 
-    void Update()
+    private void FixedUpdate()
     {
         MovePlayer();
         Jump();
@@ -36,29 +36,13 @@ public class PlayerMovement : MonoBehaviour
         float translate = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         animator.SetFloat("Speed", Mathf.Abs(translate));
         
-        if(translate < 0)
+        if(translate < 0 && m_FacingRight || translate > 0 && !m_FacingRight)
         {
-            if (m_FacingRight)
-            {
                 Flip();
-            }
-            //animator.SetFloat("Speed", Mathf.Abs(translate));
-            _transform.Translate(Mathf.Abs(translate), 0, 0);
         }
-        else if (translate > 0)
-        {
-            if (!m_FacingRight)
-            {
-                Flip();
-            }
-            //animator.SetFloat("Speed", Mathf.Abs(translate));
-            _transform.Translate(translate, 0, 0);
-        }
-        else
-        {
-          //  transform.Translate(translate, 0, 0);
-        }
-        
+        _transform.Translate(Mathf.Abs(translate), 0, 0);
+
+
     }
 
     void Jump()
@@ -69,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
             _audioWrapper.PlayOneShot(jump);
             animator.SetBool("IsJumping", true);
-            Debug.Log(gameObject.tag);
         }
     }
 
