@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 484412875}
   - component: {fileID: 484412874}
   - component: {fileID: 484412873}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ground (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 1301812228}
   - component: {fileID: 1301812227}
   - component: {fileID: 1301812226}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ground (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 2080165417}
   - component: {fileID: 2080165416}
   - component: {fileID: 2080165415}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1916,5 +1916,14 @@ PrefabInstance:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 956057276}
+    - target: {fileID: 8142583525123431733, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: Scene
+      value: SampleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908215817, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
+      propertyPath: horizontalRayCount
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}

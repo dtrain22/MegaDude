@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 8142583525123431730}
   - component: {fileID: 8142583525123431731}
   - component: {fileID: 8142583525123431733}
-  - component: {fileID: 8142583525123431759}
   - component: {fileID: 8142583525147437548}
+  - component: {fileID: 1908215816}
+  - component: {fileID: 1908215817}
   m_Layer: 10
   m_Name: MegaDude
   m_TagString: Player
@@ -170,26 +171,9 @@ MonoBehaviour:
   Damage: 0
   HealthBar: {fileID: 0}
   InvincibilityLength: 5
-  Player: {fileID: 8142583525123431759}
+  Player: {fileID: 0}
   FallDeath: -5
   Scene: 
---- !u!114 &8142583525123431759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8142583525123431756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e4f9938afb42d49942cd53f8e714d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 8142583525123431758}
-  speed: 5
-  isOnGround: 0
-  jumpPower: 7
-  jump: {fileID: 8300000, guid: dc907db6e0b160e4f8937076263b2642, type: 3}
 --- !u!114 &8142583525147437548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +194,39 @@ MonoBehaviour:
   chargeWeapon: {fileID: 8300000, guid: c6498d02597416249834e1e6905c2906, type: 3}
   chargeTimer: 0
   growthRate: 0.1
+--- !u!114 &1908215816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142583525123431756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647e1b142fe0e00489740fdcfc26d20f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpHeight: 4
+  timeToJumpApex: 0.4
+  jump: {fileID: 8300000, guid: dc907db6e0b160e4f8937076263b2642, type: 3}
+  animator: {fileID: 8142583525123431758}
+--- !u!114 &1908215817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142583525123431756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4aaee752c6346d448aca7f3b343b929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  horizontalRayCount: 4
+  verticalRayCount: 4
 --- !u!1 &8142583526349646572
 GameObject:
   m_ObjectHideFlags: 0
