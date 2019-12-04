@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 37842442}
   - component: {fileID: 37842441}
   - component: {fileID: 37842440}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 168431148}
   - component: {fileID: 168431147}
   - component: {fileID: 168431146}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StartGround5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 204681996}
   - component: {fileID: 204681995}
   - component: {fileID: 204681994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MiniBossStair1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -577,6 +577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &242709806
@@ -750,7 +752,7 @@ GameObject:
   - component: {fileID: 290551983}
   - component: {fileID: 290551982}
   - component: {fileID: 290551981}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StartGround2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -855,7 +857,7 @@ GameObject:
   - component: {fileID: 299947757}
   - component: {fileID: 299947756}
   - component: {fileID: 299947755}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1033,7 +1035,7 @@ GameObject:
   - component: {fileID: 314176027}
   - component: {fileID: 314176026}
   - component: {fileID: 314176025}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1158,6 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &314845025
@@ -1258,7 +1261,7 @@ GameObject:
   - component: {fileID: 317881163}
   - component: {fileID: 317881162}
   - component: {fileID: 317881161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1363,7 +1366,7 @@ GameObject:
   - component: {fileID: 319937039}
   - component: {fileID: 319937038}
   - component: {fileID: 319937037}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1468,7 +1471,7 @@ GameObject:
   - component: {fileID: 339507950}
   - component: {fileID: 339507949}
   - component: {fileID: 339507948}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pillar4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1678,7 +1681,7 @@ GameObject:
   - component: {fileID: 426495350}
   - component: {fileID: 426495349}
   - component: {fileID: 426495348}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1783,7 +1786,7 @@ GameObject:
   - component: {fileID: 442862749}
   - component: {fileID: 442862748}
   - component: {fileID: 442862747}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1888,7 +1891,7 @@ GameObject:
   - component: {fileID: 448872481}
   - component: {fileID: 448872480}
   - component: {fileID: 448872479}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2050,6 +2053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &464623506
@@ -2150,7 +2154,7 @@ GameObject:
   - component: {fileID: 486855279}
   - component: {fileID: 486855278}
   - component: {fileID: 486855277}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2255,7 +2259,7 @@ GameObject:
   - component: {fileID: 495543734}
   - component: {fileID: 495543733}
   - component: {fileID: 495543732}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2465,7 +2469,7 @@ GameObject:
   - component: {fileID: 506533981}
   - component: {fileID: 506533980}
   - component: {fileID: 506533979}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2570,7 +2574,7 @@ GameObject:
   - component: {fileID: 513357962}
   - component: {fileID: 513357961}
   - component: {fileID: 513357960}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2694,6 +2698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f82dd743f09744aaed5977fd704f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1165251056}
 --- !u!81 &539227822
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2771,7 +2776,7 @@ GameObject:
   - component: {fileID: 553153269}
   - component: {fileID: 553153268}
   - component: {fileID: 553153267}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2876,7 +2881,7 @@ GameObject:
   - component: {fileID: 576092789}
   - component: {fileID: 576092788}
   - component: {fileID: 576092787}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StartBackWall
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2981,7 +2986,7 @@ GameObject:
   - component: {fileID: 623550733}
   - component: {fileID: 623550732}
   - component: {fileID: 623550731}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3086,7 +3091,7 @@ GameObject:
   - component: {fileID: 654124620}
   - component: {fileID: 654124619}
   - component: {fileID: 654124618}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MiniBossFloor
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3211,6 +3216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &694686529
@@ -3311,7 +3317,7 @@ GameObject:
   - component: {fileID: 708621180}
   - component: {fileID: 708621179}
   - component: {fileID: 708621178}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3416,7 +3422,7 @@ GameObject:
   - component: {fileID: 725322649}
   - component: {fileID: 725322648}
   - component: {fileID: 725322647}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3521,7 +3527,7 @@ GameObject:
   - component: {fileID: 774031991}
   - component: {fileID: 774031990}
   - component: {fileID: 774031989}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3626,7 +3632,7 @@ GameObject:
   - component: {fileID: 783821897}
   - component: {fileID: 783821896}
   - component: {fileID: 783821895}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3836,7 +3842,7 @@ GameObject:
   - component: {fileID: 789522010}
   - component: {fileID: 789522009}
   - component: {fileID: 789522008}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3941,7 +3947,7 @@ GameObject:
   - component: {fileID: 789546393}
   - component: {fileID: 789546392}
   - component: {fileID: 789546391}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StartGround3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4066,6 +4072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &938707038
@@ -4275,7 +4282,7 @@ GameObject:
   - component: {fileID: 1011266325}
   - component: {fileID: 1011266324}
   - component: {fileID: 1011266323}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4380,7 +4387,7 @@ GameObject:
   - component: {fileID: 1047068009}
   - component: {fileID: 1047068008}
   - component: {fileID: 1047068007}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4590,7 +4597,7 @@ GameObject:
   - component: {fileID: 1091879168}
   - component: {fileID: 1091879167}
   - component: {fileID: 1091879166}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4695,7 +4702,7 @@ GameObject:
   - component: {fileID: 1096618679}
   - component: {fileID: 1096618678}
   - component: {fileID: 1096618677}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4889,7 +4896,7 @@ GameObject:
   - component: {fileID: 1111303177}
   - component: {fileID: 1111303176}
   - component: {fileID: 1111303175}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StartGround1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4997,12 +5004,12 @@ PrefabInstance:
     - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.0432177
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.47568
+      value: 28.58
       objectReference: {fileID: 0}
     - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
         type: 3}
@@ -5056,6 +5063,12 @@ PrefabInstance:
       objectReference: {fileID: 1098809940}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
+--- !u!1 &1165251056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1165251055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1228783189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,6 +5101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &1228783191
@@ -5188,7 +5202,7 @@ GameObject:
   - component: {fileID: 1240768605}
   - component: {fileID: 1240768604}
   - component: {fileID: 1240768603}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5293,7 +5307,7 @@ GameObject:
   - component: {fileID: 1293388571}
   - component: {fileID: 1293388570}
   - component: {fileID: 1293388569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5489,7 +5503,7 @@ GameObject:
   - component: {fileID: 1313744811}
   - component: {fileID: 1313744810}
   - component: {fileID: 1313744809}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StartGround4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5594,7 +5608,7 @@ GameObject:
   - component: {fileID: 1340441571}
   - component: {fileID: 1340441570}
   - component: {fileID: 1340441569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5699,7 +5713,7 @@ GameObject:
   - component: {fileID: 1353616002}
   - component: {fileID: 1353616001}
   - component: {fileID: 1353616000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5804,7 +5818,7 @@ GameObject:
   - component: {fileID: 1357361113}
   - component: {fileID: 1357361112}
   - component: {fileID: 1357361111}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5929,6 +5943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03edfe6941412040b07f1893c825cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   currentHeight: 0
   maxHeight: 0
 --- !u!61 &1417062923
@@ -6134,7 +6149,7 @@ GameObject:
   - component: {fileID: 1474584004}
   - component: {fileID: 1474584003}
   - component: {fileID: 1474584002}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6239,7 +6254,7 @@ GameObject:
   - component: {fileID: 1475169783}
   - component: {fileID: 1475169782}
   - component: {fileID: 1475169781}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6344,7 +6359,7 @@ GameObject:
   - component: {fileID: 1485644362}
   - component: {fileID: 1485644361}
   - component: {fileID: 1485644360}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6519,7 +6534,7 @@ GameObject:
   - component: {fileID: 1537120608}
   - component: {fileID: 1537120607}
   - component: {fileID: 1537120606}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6624,7 +6639,7 @@ GameObject:
   - component: {fileID: 1547330822}
   - component: {fileID: 1547330821}
   - component: {fileID: 1547330820}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6729,7 +6744,7 @@ GameObject:
   - component: {fileID: 1551061632}
   - component: {fileID: 1551061631}
   - component: {fileID: 1551061630}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pillar2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7044,7 +7059,7 @@ GameObject:
   - component: {fileID: 1637040446}
   - component: {fileID: 1637040445}
   - component: {fileID: 1637040444}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pillar3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7149,7 +7164,7 @@ GameObject:
   - component: {fileID: 1638725094}
   - component: {fileID: 1638725093}
   - component: {fileID: 1638725092}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7254,7 +7269,7 @@ GameObject:
   - component: {fileID: 1651554391}
   - component: {fileID: 1651554390}
   - component: {fileID: 1651554389}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7359,7 +7374,7 @@ GameObject:
   - component: {fileID: 1689793012}
   - component: {fileID: 1689793011}
   - component: {fileID: 1689793010}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7464,7 +7479,7 @@ GameObject:
   - component: {fileID: 1718296634}
   - component: {fileID: 1718296633}
   - component: {fileID: 1718296632}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lip5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7700,7 +7715,7 @@ GameObject:
   - component: {fileID: 1793378303}
   - component: {fileID: 1793378302}
   - component: {fileID: 1793378301}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7805,7 +7820,7 @@ GameObject:
   - component: {fileID: 1795986876}
   - component: {fileID: 1795986875}
   - component: {fileID: 1795986874}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7910,7 +7925,7 @@ GameObject:
   - component: {fileID: 1805921496}
   - component: {fileID: 1805921495}
   - component: {fileID: 1805921494}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8015,7 +8030,7 @@ GameObject:
   - component: {fileID: 1841508639}
   - component: {fileID: 1841508638}
   - component: {fileID: 1841508637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8120,7 +8135,7 @@ GameObject:
   - component: {fileID: 1853007912}
   - component: {fileID: 1853007911}
   - component: {fileID: 1853007910}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8262,7 +8277,7 @@ GameObject:
   - component: {fileID: 1873744802}
   - component: {fileID: 1873744801}
   - component: {fileID: 1873744800}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RaiseStair2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8439,7 +8454,7 @@ GameObject:
   - component: {fileID: 1919573475}
   - component: {fileID: 1919573474}
   - component: {fileID: 1919573473}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8544,7 +8559,7 @@ GameObject:
   - component: {fileID: 1952032743}
   - component: {fileID: 1952032742}
   - component: {fileID: 1952032741}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8649,7 +8664,7 @@ GameObject:
   - component: {fileID: 1975040098}
   - component: {fileID: 1975040097}
   - component: {fileID: 1975040096}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8754,7 +8769,7 @@ GameObject:
   - component: {fileID: 1975462737}
   - component: {fileID: 1975462736}
   - component: {fileID: 1975462735}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8859,7 +8874,7 @@ GameObject:
   - component: {fileID: 2064439520}
   - component: {fileID: 2064439519}
   - component: {fileID: 2064439518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pillar1
   m_TagString: Ground
   m_Icon: {fileID: 0}
