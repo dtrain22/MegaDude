@@ -40,16 +40,6 @@ public class Weapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             HoldButton();
-            if (playerMovement.isOnGround == false)
-            {
-                animator.SetBool("IsJumping", true);
-                animator.SetBool("IsShooting", true);
-            }
-            else
-            {
-                animator.SetBool("IsShooting", true);
-                animator.SetBool("IsJumping", false);
-            }
         }
         else if (Input.GetButtonUp("Fire1"))
         {
