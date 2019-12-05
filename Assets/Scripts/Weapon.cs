@@ -7,10 +7,10 @@ public class Weapon : MonoBehaviour
     public Animator animator;
     public Transform firePoint;
     public GameObject bullet;
-    private PlayerMovement playerMovement; // for bullet direction
+    private PlayerMove playerMovement;
 
+    //Audio
     private AudioSource _oneshotPlayer;
-
     public AudioClip pewpew;
     public AudioClip bigPew;
     private AudioSource _chargeWeaponPlayer;
@@ -19,11 +19,11 @@ public class Weapon : MonoBehaviour
     public float chargeTimer = 0;
     private float chargeRate = 2f;
     public float growthRate = .1f;
-    private bool buttonHeldDown = false;
+    public bool isShooting = false;
 
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = GetComponent<PlayerMove>();
         _chargeWeaponPlayer = gameObject.AddComponent<AudioSource>();
         _chargeWeaponPlayer.clip = chargeWeapon;
         _oneshotPlayer = gameObject.AddComponent<AudioSource>();
@@ -31,8 +31,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-
-        if (buttonHeldDown) {
+        if (isShooting) {
             chargeTimer += Time.deltaTime * chargeRate;
             growthRate += .01f * .2f;
         }
@@ -40,16 +39,6 @@ public class Weapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             HoldButton();
-            if (playerMovement.isOnGround == false)
-            {
-                animator.SetBool("IsJumping", true);
-                animator.SetBool("IsShooting", true);
-            }
-            else
-            {
-                animator.SetBool("IsShooting", true);
-                animator.SetBool("IsJumping", false);
-            }
         }
         else if (Input.GetButtonUp("Fire1"))
         {
@@ -59,8 +48,7 @@ public class Weapon : MonoBehaviour
             int addedDamage = 0;
             _chargeWeaponPlayer.Stop();
 
-            animator.SetBool("IsShooting", false);
-         
+            animator.SetBool("IsShooting", false);    
 
             if (chargeTimer < 2)
             {
@@ -87,19 +75,18 @@ public class Weapon : MonoBehaviour
             ButtonReleased();
             //animator.SetBool("IsShooting", false);
         }
-
     }
 
     public void HoldButton()
     {
-        buttonHeldDown = true;
+        isShooting = true;
         // play slightly delayed so player doesn't hear it when bullet spamming
         _chargeWeaponPlayer.PlayDelayed(0.08f);
     }
 
     public void ButtonReleased()
     {
-        buttonHeldDown = false;
+        isShooting = false;
         chargeTimer = 0;
         growthRate = 0;
     } 
