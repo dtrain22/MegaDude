@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5226017426478130622}
   - component: {fileID: 5226017426478130617}
   - component: {fileID: 5226017426478130616}
-  - component: {fileID: 2814165259505344044}
   - component: {fileID: -5449623467610814748}
+  - component: {fileID: 2814165259505344044}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -129,33 +129,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2814165259505344044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5226017426478130619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68e2df9997b4c3846993ed17fd873faa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
-  meleeDamage: 5
-  chomp: {fileID: 8300000, guid: 9a20886034858874581de731cc501ade, type: 3}
-  death: {fileID: 8300000, guid: 26fbc460033afcd4aaf06d8ae778dd78, type: 3}
-  jumpForce: 0
-  isOnGround: 0
-  isFacingRight: 0
-  distance: 0
-  speed: 0
-  groundDetection: {fileID: 0}
-  projectile: {fileID: 0}
-  firePoint: {fileID: 0}
-  startTimeBetweenShots: 0
-  isShootingType: 0
-  range: 0
 --- !u!82 &-5449623467610814748
 AudioSource:
   m_ObjectHideFlags: 0
@@ -252,3 +225,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2814165259505344044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226017426478130619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e2df9997b4c3846993ed17fd873faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  meleeDamage: 5
+  chomp: {fileID: 8300000, guid: 9a20886034858874581de731cc501ade, type: 3}
+  death: {fileID: 8300000, guid: 26fbc460033afcd4aaf06d8ae778dd78, type: 3}
+  jumpForce: 0
+  isOnGround: 0
+  distance: 0
+  speed: 0
+  groundDetection: {fileID: 0}

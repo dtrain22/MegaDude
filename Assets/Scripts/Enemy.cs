@@ -17,20 +17,10 @@ public class Enemy : MonoBehaviour
     public float jumpForce;
     private bool movingRight;
     public bool isOnGround = false;
-    public bool isFacingRight;
     public float distance;
     public float speed;
     public Transform groundDetection;
     private GameObject Ground;
-
-    //Shooting
-    private float timeBetweenShots;
-    public GameObject projectile;
-    public GameObject firePoint;
-    public float startTimeBetweenShots;
-    public bool isShootingType = false;
-    public float range;
-
 
     void Start()
     {
@@ -38,27 +28,12 @@ public class Enemy : MonoBehaviour
         Ground = GameObject.FindGameObjectWithTag("Ground");
         _audioPlayer = gameObject.AddComponent<AudioSource>();
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
-        isFacingRight = true;
     }
 
     void Update()
     {
-        range = Mathf.Abs(player.transform.position.x - transform.position.x);
-        if (isShootingType)
-        {
-            if(range < 20)
-            {
-                ChangeDirection();
-                FireProjectile();
-            }
-        }
-        if (!isShootingType)
-        {
-            firePoint = null; 
-            projectile = null;
             Patrol();
             Jump();
-        }
     }
 
     void Jump()
@@ -67,7 +42,6 @@ public class Enemy : MonoBehaviour
         {
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
-
     }
 
     public void TakeDamage(int dmg)
@@ -79,46 +53,6 @@ public class Enemy : MonoBehaviour
         } else
         {
             Destroy(gameObject);
-        }
-    }
-
-    private void FlipCharacter()
-    {
-        // Switch the way the player is labelled as facing.
-        isFacingRight = !isFacingRight; 
-        transform.Rotate(0f, 180f, 0f);
-    }
-
-    private void ChangeDirection()
-    {
-        if (gameObject != null && player != null)
-        {
-            if (player.transform.position.x < transform.position.x && isFacingRight)
-            {
-                    FlipCharacter();
-            }
-            else if (player.transform.position.x > transform.position.x && !isFacingRight)
-            {
-                    FlipCharacter();  
-            }
-        }
-    }
-
-    private void FireProjectile()
-    {
-        if (timeBetweenShots <= 0)
-        {
-            Debug.Log(gameObject.name + " Shooting");
-            var projectileClone = Instantiate(projectile, firePoint.transform.position, Quaternion.identity) as GameObject;
-
-            projectileClone.GetComponent<Renderer>().material.color = Color.red;
-            projectile.GetComponent<Bullet>().owner = gameObject;
-
-            timeBetweenShots = startTimeBetweenShots;
-        }
-        else
-        {
-            timeBetweenShots -= Time.deltaTime;
         }
     }
 
