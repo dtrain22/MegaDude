@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        Enemy = GameObject.Find("Shooting_Enemy");
+        Enemy = owner;
         Player = GameObject.FindGameObjectWithTag("Player");
 
         if (Enemy != null && owner != null && owner.tag == "Enemy")

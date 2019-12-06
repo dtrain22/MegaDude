@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
     private AudioSource _audioPlayer;
     public AudioClip chomp;
     public AudioClip death;
-
     public float jumpForce;
     private bool movingRight;
     public bool isOnGround = false;
@@ -30,11 +29,11 @@ public class Enemy : MonoBehaviour
     public GameObject firePoint;
     public float startTimeBetweenShots;
     public bool isShootingType = false;
+    public float range;
 
 
     void Start()
     {
-
         player = GameObject.FindGameObjectWithTag("Player");
         Ground = GameObject.FindGameObjectWithTag("Ground");
         _audioPlayer = gameObject.AddComponent<AudioSource>();
@@ -44,14 +43,19 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        range = Mathf.Abs(player.transform.position.x - transform.position.x);
         if (isShootingType)
         {
-            ChangeDirection();
-            FireProjectile();
+            if(range < 20)
+            {
+                ChangeDirection();
+                FireProjectile();
+            }
         }
-
         if (!isShootingType)
         {
+            firePoint = null; 
+            projectile = null;
             Patrol();
             Jump();
         }
@@ -104,6 +108,7 @@ public class Enemy : MonoBehaviour
     {
         if (timeBetweenShots <= 0)
         {
+            Debug.Log(gameObject.name + " Shooting");
             var projectileClone = Instantiate(projectile, firePoint.transform.position, Quaternion.identity) as GameObject;
 
             projectileClone.GetComponent<Renderer>().material.color = Color.red;
