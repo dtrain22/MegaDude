@@ -82,7 +82,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
-
     }
 }
 

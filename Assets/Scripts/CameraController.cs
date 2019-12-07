@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class CameraController : MonoBehaviour
     private float yDist;
     private Vector3 offset;
     private Vector3 position;
+    private const string grassland= "First Level Design";
 
     void Start()
     {
@@ -28,10 +30,25 @@ public class CameraController : MonoBehaviour
     {
         if (player != null)
         {
-            float yPos = player.transform.position.y + yDist;
-            float xPos = player.transform.position.x + xDist;
-            offset.Set(xPos, yPos, zPos);
-            transform.position = offset;
+            if(SceneManager.GetActiveScene().name == grassland)
+            {
+                //Camera needs to be tweaked 
+                if(player.transform.position.x < 42)
+                {
+                    float xPos = player.transform.position.x + xDist;
+                    offset.Set(xPos, yDist, zPos);
+                    transform.position = offset;
+                }
+                else 
+                {
+                    float xPos = player.transform.position.x + xDist;
+                    float yPos = player.transform.position.y + yDist;
+                    offset.Set(xPos, yPos, zPos);
+                    transform.position = offset;
+                }
+            }
+ 
+
         }
     }
 
