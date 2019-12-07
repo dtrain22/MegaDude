@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //Health/Damage
-    public int health = 10;
-    public int meleeDamage = 5;
- 
-    //Movement
     private GameObject player;
+    private GameObject Ground;
     private Rigidbody2D _rigidbody;
     private AudioSource _audioPlayer;
+    private bool isOnGround;
+    public int health;
+    public int meleeDamage;
+    public float jumpForce;
+    public float distance;
     public AudioClip chomp;
     public AudioClip death;
-    public float jumpForce;
-    private bool movingRight;
-    public bool isOnGround = false;
-    public float distance;
-    public float speed;
-    public Transform groundDetection;
-    private GameObject Ground;
+
 
     void Start()
     {
@@ -28,11 +23,14 @@ public class Enemy : MonoBehaviour
         Ground = GameObject.FindGameObjectWithTag("Ground");
         _audioPlayer = gameObject.AddComponent<AudioSource>();
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+
+        isOnGround = false;
+        health = 20;
+        meleeDamage = 5;
     }
 
     void Update()
     {
-            Patrol();
             Jump();
     }
 
@@ -53,27 +51,6 @@ public class Enemy : MonoBehaviour
         } else
         {
             Destroy(gameObject);
-        }
-    }
-
-    private void Patrol()
-    {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
-
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
-
-        if (groundInfo.collider == false)
-        {
-            if (movingRight == true)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
         }
     }
 
