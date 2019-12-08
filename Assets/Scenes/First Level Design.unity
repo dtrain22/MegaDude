@@ -5122,7 +5122,7 @@ GameObject:
   - component: {fileID: 661435269}
   - component: {fileID: 661435268}
   m_Layer: 11
-  m_Name: Cave Platform 15
+  m_Name: Cave Platform 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5228,7 +5228,7 @@ GameObject:
   - component: {fileID: 662227120}
   - component: {fileID: 662227123}
   m_Layer: 11
-  m_Name: Cave Platform 7
+  m_Name: Cave Platform 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
