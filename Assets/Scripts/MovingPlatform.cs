@@ -1,37 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovingPlatform : MonoBehaviour
 {
     public float minHeight;
     public float maxHeight;
-    public bool goingDown = false;
+    public bool goingDown;
     private Vector3 move;
 
     // Start is called before the first frame update
     void Start()
     {
+        goingDown = false;
+        if(SceneManager.GetActiveScene().name == "First Level Design")
+        {
+            minHeight = -38;
+            maxHeight = -32.5f;
+        }
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (goingDown)
-        {
-            float newY = transform.position.y - .03f;
-            move.Set(transform.position.x, newY, transform.position.z);
-            if (newY < minHeight)
-                goingDown = false;
-        }
+        if (transform.localPosition.y > maxHeight)
+            goingDown = true;
+        else if (transform.localPosition.y < minHeight)
+            goingDown = false;
 
+        if (goingDown)
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - .03f, transform.localPosition.z);
         else
-        {
-            float newY = transform.position.y + .05f;
-            move.Set(transform.position.x, newY, transform.position.z);
-            if (newY > maxHeight)
-                goingDown = true;
-        }
-        transform.position = move;
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y + .05f, transform.localPosition.z);
     }
 }

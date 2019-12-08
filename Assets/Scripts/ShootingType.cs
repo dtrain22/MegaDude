@@ -10,7 +10,6 @@ public class ShootingType : MonoBehaviour
     private GameObject firePoint;
     private float startTimeBetweenShots;
     public bool isFacingRight;
-    public float range;
 
     void Start()
     {
@@ -23,9 +22,10 @@ public class ShootingType : MonoBehaviour
 
     void Update()
     {
-        range = Mathf.Abs(player.transform.position.x - transform.position.x);
-
-        if(range < 20)
+        var rangeX = Mathf.Abs(player.transform.position.x - transform.position.x);
+        var rangeY = Mathf.Abs(player.transform.position.y - transform.position.y);
+ 
+        if(rangeX < 20 && rangeY < 4)
         {
             ChangeDirection();
             FireProjectile();

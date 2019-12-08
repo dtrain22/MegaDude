@@ -48,7 +48,7 @@ public class CameraController : MonoBehaviour
                 }
                 else if (player.transform.position.x > 38 && player.transform.position.y < -62)
                 {
-                    yPos = (playerY > -70) ? -70 : playerY;
+                    yPos = (playerY > -67) ? -67 : playerY;
                     xPos = (playerX < 40 ) ? 40 : playerX;
                     //Debug.Log("Region 2 ->  y: " + yPos + " x: " + xPos);
                 }
