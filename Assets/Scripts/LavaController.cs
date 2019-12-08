@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LavaController : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public float currentHeight;
     public float maxHeight;
     private Vector3 move;
@@ -12,6 +12,7 @@ public class LavaController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         currentHeight = transform.position.y;
         maxHeight = 37;
     }
@@ -24,6 +25,13 @@ public class LavaController : MonoBehaviour
             float newY = transform.position.y + .05f;
             move.Set(transform.position.x, newY, transform.position.z);
             transform.position = move;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.gameObject.tag == "Player")
+        {
+            collision.collider.gameObject.GetComponent<PlayerHealth>().Die();
         }
     }
 }
