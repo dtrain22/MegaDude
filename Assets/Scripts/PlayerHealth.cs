@@ -59,9 +59,9 @@ public class PlayerHealth : MonoBehaviour
         switch (SceneManager.GetActiveScene().name)
         {
             case grassLand:
-                if (transform.position.x < 42)
+                if (transform.position.x < 38)
                     FallDeath(-8);
-                else if (transform.position.x > 42 || transform.position.x < 133)
+                else if (transform.position.x > 38 || transform.position.x < 133)
                     FallDeath(-92);
                 else if (transform.position.x > 212 || transform.position.x < 354)
                     FallDeath(-44);
