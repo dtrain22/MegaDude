@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Lava Level");
+        SceneManager.LoadScene("LavaLevel");
     }
 
 }
