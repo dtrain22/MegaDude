@@ -209,8 +209,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &41738449
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,8 +733,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1419,8 +1415,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2345,6 +2339,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1355083223}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 603941545}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 603941544}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -2405,37 +2430,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 603941545}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 603941544}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -2692,6 +2686,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1355083223}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 1092624601}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1092624600}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -2752,37 +2777,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 1092624601}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1092624600}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -2904,6 +2898,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1355083223}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 354473484}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 354473483}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -2964,37 +2989,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 354473484}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 354473483}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -3245,6 +3239,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275376274}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 617229079}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -3304,16 +3308,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 617229079}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -4162,6 +4156,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 495504147}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 393034569}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 393034568}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -4222,11 +4247,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
+--- !u!4 &588054119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5226017426478130620, guid: 1a3823bf6c4199a4ba523fa153194b25,
+    type: 3}
+  m_PrefabInstance: {fileID: 588054118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &595928446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 495504147}
+    m_Modifications:
     - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: groundDetection
       value: 
-      objectReference: {fileID: 393034569}
+      objectReference: {fileID: 561158411}
     - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: speed
@@ -4246,29 +4287,13 @@ PrefabInstance:
         type: 3}
       propertyPath: firePoint
       value: 
-      objectReference: {fileID: 393034568}
+      objectReference: {fileID: 561158410}
     - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
         type: 3}
-    m_RemovedComponents:
-    - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
---- !u!4 &588054119 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5226017426478130620, guid: 1a3823bf6c4199a4ba523fa153194b25,
-    type: 3}
-  m_PrefabInstance: {fileID: 588054118}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &595928446
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 495504147}
-    m_Modifications:
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -4329,37 +4354,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 561158411}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 561158410}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -4511,8 +4505,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -4946,6 +4938,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275376274}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 489395822}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -5005,16 +5007,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 489395822}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -5480,6 +5472,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275376274}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 125256020}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -5539,16 +5541,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 125256020}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -5804,11 +5796,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
-        type: 3}
-      propertyPath: m_Name
-      value: MegaDude
-      objectReference: {fileID: 0}
+    - target: {fileID: 1908215816, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d913e343ce02e04a8b20e9111c4cd54, type: 3}
     - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5879,6 +5870,11 @@ PrefabInstance:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 24605558}
+    - target: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_Name
+      value: MegaDude
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
 --- !u!1 &697077745
@@ -6763,6 +6759,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1314406485}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 900692179}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -6822,16 +6828,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 900692179}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -8200,6 +8196,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1314406485}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 132937136}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -8259,16 +8265,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 132937136}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -9311,6 +9307,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1124617460}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 926075198}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -9370,16 +9376,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 926075198}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -11718,6 +11714,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1355083223}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 883197899}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 883197898}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -11778,37 +11805,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 883197899}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 883197898}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -15882,6 +15878,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275376274}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 464653974}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -15941,16 +15947,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 464653974}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

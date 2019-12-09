@@ -246,8 +246,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -715,6 +713,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 1128602335}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1128602334}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -775,37 +804,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 1128602335}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1128602334}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -901,8 +899,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1041687706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,8 +1336,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1368,6 +1362,47 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 423010058}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: jumpForce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isOnGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: isShootingType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1320593023}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
+        type: 3}
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: startTimeBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -1427,47 +1462,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 423010058}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: jumpForce
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isOnGround
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: isShootingType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1320593023}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269,
-        type: 3}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: startTimeBetweenShots
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8555296372455176419, guid: 1a3823bf6c4199a4ba523fa153194b25, type: 3}
@@ -1536,8 +1530,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1655,6 +1647,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
+        type: 3}
+      propertyPath: groundDetection
+      value: 
+      objectReference: {fileID: 202347766}
     - target: {fileID: 5226017426478130619, guid: 1a3823bf6c4199a4ba523fa153194b25,
         type: 3}
       propertyPath: m_Name
@@ -1715,11 +1712,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2814165259505344044, guid: 1a3823bf6c4199a4ba523fa153194b25,
-        type: 3}
-      propertyPath: groundDetection
-      value: 
-      objectReference: {fileID: 202347766}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
@@ -1851,10 +1843,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
-        type: 3}
-      propertyPath: m_Name
-      value: MegaDude
+    - target: {fileID: 1908215816, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d913e343ce02e04a8b20e9111c4cd54, type: 3}
+    - target: {fileID: 1908215817, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
+      propertyPath: horizontalRayCount
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8142583525123431728, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
         type: 3}
@@ -1921,9 +1916,10 @@ PrefabInstance:
       propertyPath: Scene
       value: SampleScene
       objectReference: {fileID: 0}
-    - target: {fileID: 1908215817, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
-      propertyPath: horizontalRayCount
-      value: 10
+    - target: {fileID: 8142583525123431756, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
+        type: 3}
+      propertyPath: m_Name
+      value: MegaDude
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
