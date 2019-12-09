@@ -12,26 +12,22 @@ public class PlayerHealth : MonoBehaviour
     public Slider HealthBar;
     public float InvincibilityLength;
     private float InvincibilityCounter;
-    public PlayerMove Player;
-    public int FallDeath;
-    public string Scene;
-    /*public Color FlashColor;
-    public Color DefaultColor;
-    public float FlashTime;
-    public int NumOfFlashes;
-    public SpriteRenderer Sprite;
-    private Material FlashWhite;
-    private Material FlashDefault;
-    SpriteRenderer Sr;*/
-
-    //Start is called before the first frame update
+    private const string grassLand = "First Level Design";
+    private const string lavaLand = "LavaLevel";
+    private GameObject gameOverTxt, restartTxt, giveUpTxt;
 
     void Start()
     {
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
+
+        gameOverTxt = GameObject.FindGameObjectWithTag("GameOver");
+        restartTxt = GameObject.FindGameObjectWithTag("Restart");
+        giveUpTxt = GameObject.FindGameObjectWithTag("GiveUp");
+        gameOverTxt.SetActive(false);
+        restartTxt.SetActive(false);
+        giveUpTxt.SetActive(false);
     }
 
     void Update()
@@ -42,12 +38,7 @@ public class PlayerHealth : MonoBehaviour
             InvincibilityCounter -= Time.deltaTime;
         }
 
-        if (gameObject.transform.position.y < FallDeath)
-
-        {
-            HealthBar.value = 0;
-            Die();
-        }
+        HandleFallDeath();
     }
 
     public void Take_Damage(int amount)
@@ -57,20 +48,56 @@ public class PlayerHealth : MonoBehaviour
             CurrentHealth -= amount;
             HealthBar.value = CurrentHealth;
             InvincibilityCounter = InvincibilityLength;
-            //StartCoroutine(Player.Knockback(0.02f, 60, Player.transform.position));
         }
         
         if(CurrentHealth <= 0)
         {
-            Destroy(gameObject);
-            Die();
+            GameOver();
         }
     }
   
-    void Die()
+    public void Die()
     {
-    //   SceneManager.LoadScene("SampleScene");
-        SceneManager.LoadScene(Scene);
+        HealthBar.value = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void HandleFallDeath()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case grassLand:
+                if (transform.position.x < 38)
+                    FallDeath(-8);
+                else if (transform.position.x > 38 || transform.position.x < 133)
+                    FallDeath(-85);
+                else if (transform.position.x > 212 || transform.position.x < 354)
+                    FallDeath(-44);
+                break;
+
+            case lavaLand:
+                if (transform.position.x < -5)
+                    FallDeath(23);
+                else if (transform.position.x > 285)
+                    FallDeath(-8);
+                break;
+        }
+    }
+
+    void FallDeath(int val)
+    {
+        if (transform.position.y < val)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        gameOverTxt.SetActive(true);
+        restartTxt.SetActive(true);
+        giveUpTxt.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
 

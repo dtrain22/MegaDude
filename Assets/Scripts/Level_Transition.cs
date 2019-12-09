@@ -6,21 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class Level_Transition : MonoBehaviour
 {
-    public string NextScene;
-    public int LevelEnd;
+    public int endOfLevel = 390;
+    private string grassLevel = "First Level Design";
+    private string lavaLevel = "LavaLevel";
+    private string menu = "Menu";
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.position.x > LevelEnd)
+        endOfLevel = SceneManager.GetActiveScene().name == grassLevel ? 390 : 400;
+        SceneHandler();
+    }
+
+    void SceneHandler()
+    {
+        if (SceneManager.GetActiveScene().name == grassLevel)
         {
-            SceneManager.LoadScene(NextScene);
+            if (gameObject.transform.position.x > endOfLevel)
+            {
+                SceneManager.LoadScene(lavaLevel);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == lavaLevel)
+        {
+            if (gameObject.transform.position.x > endOfLevel)
+            {
+                SceneManager.LoadScene(menu);
+            }
         }
     }
 }

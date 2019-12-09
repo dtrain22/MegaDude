@@ -12,7 +12,6 @@ public class MainMenu : MonoBehaviour
 
    public void QuitGame()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 
@@ -23,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Lava Level");
+        SceneManager.LoadScene("LavaLevel");
     }
 
 }
