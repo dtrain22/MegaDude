@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameOverButtons : MonoBehaviour
 {
-
-
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -15,5 +13,4 @@ public class GameOverButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-
 }
