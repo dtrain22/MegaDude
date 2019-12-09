@@ -25,13 +25,13 @@ public class Controller2D : MonoBehaviour
         CalculateRaySpacing();
     }
 
-    public void Move(Vector3 velocity)
+    public void Move(Vector3 velocity, bool facingRight)
     {
         UpdateRaycastOrigins();
         collisions.Reset();
         if (velocity.x != 0)
         {
-            HorizontalCollisions(ref velocity);
+            HorizontalCollisions(ref velocity, facingRight);
         }
         if (velocity.y != 0)
         {
@@ -41,10 +41,16 @@ public class Controller2D : MonoBehaviour
         transform.Translate(velocity);
     }
 
-    void HorizontalCollisions(ref Vector3 velocity)
+    void HorizontalCollisions(ref Vector3 velocity, bool facingRight)
     {
         float directionX = Mathf.Sign(velocity.x);
         float rayLength = Mathf.Abs(velocity.x) + skinWidth;
+
+
+        if (facingRight == false)
+        {
+            velocity.x = velocity.x * -1;
+        }
 
         for (int i = 0; i < horizontalRayCount; i++)
         {

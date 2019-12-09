@@ -64,7 +64,7 @@ public class PlayerMove : MonoBehaviour
 
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime, m_FacingRight);
     }
 
     //public IEnumerator Knockback(float KnockbackDur, float KnockbackPwr, Vector3 KnockbackDir)
@@ -93,11 +93,6 @@ public class PlayerMove : MonoBehaviour
             m_FacingRight = !m_FacingRight;
 
             transform.Rotate(0f, 180f, 0f);
-        }
-
-        if (m_FacingRight == false)
-        {
-            velocityX = velocityX * -1;
         }
 
         return velocityX;
