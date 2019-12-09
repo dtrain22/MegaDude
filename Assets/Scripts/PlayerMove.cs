@@ -11,7 +11,6 @@ public class PlayerMove : MonoBehaviour
     float accelerationTimeGrounded = .1f;
     float moveSpeed = 5;
 
-
     float gravity;
     float jumpVelocity;
     Vector3 velocity;
@@ -30,15 +29,13 @@ public class PlayerMove : MonoBehaviour
         //from player movement
         _audioWrapper = gameObject.AddComponent<AudioSource>();
 
-
         controller = GetComponent<Controller2D>();
 
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
-        print("Gravity: " + gravity + " Jump Velocity: " + jumpVelocity);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(controller.collisions.above || controller.collisions.below)
         {
@@ -52,6 +49,14 @@ public class PlayerMove : MonoBehaviour
         {
             velocity.y = jumpVelocity;
             animator.SetBool("IsJumping", true);
+            if (GetComponent<Weapon>().isShooting)
+            {
+                animator.SetBool("IsShooting", true);
+            }
+        }
+        else
+        {
+            animator.SetBool("IsJumping", false);
         }
 
         float targetVelocityX = input.x * moveSpeed;
@@ -59,7 +64,7 @@ public class PlayerMove : MonoBehaviour
 
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime, m_FacingRight);
     }
 
     //public IEnumerator Knockback(float KnockbackDur, float KnockbackPwr, Vector3 KnockbackDir)
@@ -77,34 +82,17 @@ public class PlayerMove : MonoBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(velocityX));
 
-        if (velocityX < 0)
+        if (velocityX < 0 && m_FacingRight)
         {
-            if (m_FacingRight)
-            {
-                // Switch the way the player is labelled as facing.
-                m_FacingRight = !m_FacingRight;
+            m_FacingRight = !m_FacingRight;
 
-                transform.Rotate(0f, 180f, 0f);
-            }
+            transform.Rotate(0f, 180f, 0f);
         }
-        else if (velocityX > 0)
+        else if (velocityX > 0 && !m_FacingRight)
         {
-            if (!m_FacingRight)
-            {
-                // Switch the way the player is labelled as facing.
-                m_FacingRight = !m_FacingRight;
+            m_FacingRight = !m_FacingRight;
 
-                transform.Rotate(0f, 180f, 0f);
-            }
-        }
-        else
-        {
-            //  transform.Translate(translate, 0, 0);
-        }
-
-        if (m_FacingRight == false)
-        {
-            velocityX = velocityX * -1;
+            transform.Rotate(0f, 180f, 0f);
         }
 
         return velocityX;
