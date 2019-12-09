@@ -14,12 +14,20 @@ public class PlayerHealth : MonoBehaviour
     private float InvincibilityCounter;
     private const string grassLand = "First Level Design";
     private const string lavaLand = "LavaLevel";
+    private GameObject gameOverTxt, restartTxt, giveUpTxt;
 
     void Start()
     {
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
+
+        gameOverTxt = GameObject.FindGameObjectWithTag("GameOver");
+        restartTxt = GameObject.FindGameObjectWithTag("Restart");
+        giveUpTxt = GameObject.FindGameObjectWithTag("GiveUp");
+        gameOverTxt.SetActive(false);
+        restartTxt.SetActive(false);
+        giveUpTxt.SetActive(false);
     }
 
     void Update()
@@ -29,7 +37,8 @@ public class PlayerHealth : MonoBehaviour
         {
             InvincibilityCounter -= Time.deltaTime;
         }
-        handleFallDeath();
+
+        HandleFallDeath();
     }
 
     public void Take_Damage(int amount)
@@ -43,8 +52,7 @@ public class PlayerHealth : MonoBehaviour
         
         if(CurrentHealth <= 0)
         {
-            Destroy(gameObject);
-            Die();
+            GameOver();
         }
     }
   
@@ -54,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void handleFallDeath()
+    void HandleFallDeath()
     {
         switch (SceneManager.GetActiveScene().name)
         {
@@ -62,7 +70,7 @@ public class PlayerHealth : MonoBehaviour
                 if (transform.position.x < 38)
                     FallDeath(-8);
                 else if (transform.position.x > 38 || transform.position.x < 133)
-                    FallDeath(-92);
+                    FallDeath(-85);
                 else if (transform.position.x > 212 || transform.position.x < 354)
                     FallDeath(-44);
                 break;
@@ -80,8 +88,16 @@ public class PlayerHealth : MonoBehaviour
     {
         if (transform.position.y < val)
         {
-            Die();
+            GameOver();
         }
+    }
+
+    void GameOver()
+    {
+        gameOverTxt.SetActive(true);
+        restartTxt.SetActive(true);
+        giveUpTxt.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
 
