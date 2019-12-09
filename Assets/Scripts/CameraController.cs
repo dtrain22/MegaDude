@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
-        position = new Vector3(player.transform.position.x + .1f, transform.position.y, transform.position.z);
+        position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
         transform.position = position;
   
         offset = transform.position - player.transform.position;

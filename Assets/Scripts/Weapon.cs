@@ -36,45 +36,45 @@ public class Weapon : MonoBehaviour
             growthRate += .01f * .2f;
         }
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            HoldButton();
-        }
-        else if (Input.GetButtonUp("Fire1"))
-        {
-            var cloneBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as GameObject;
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+        //    HoldButton();
+        //}
+        //else if (Input.GetButtonUp("Fire1"))
+        //{
+        //    var cloneBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as GameObject;
 
-            float scaleVal;
-            int addedDamage = 0;
-            _chargeWeaponPlayer.Stop();
+        //    float scaleVal;
+        //    int addedDamage = 0;
+        //    _chargeWeaponPlayer.Stop();
 
-            animator.SetBool("IsShooting", false);    
+        //    animator.SetBool("IsShooting", false);    
 
-            if (chargeTimer < 2)
-            {
-                scaleVal = growthRate; // scale bullet size
-                if (chargeTimer > 1)
-                    addedDamage += 2;
+        //    if (chargeTimer < 2)
+        //    {
+        //        scaleVal = growthRate; // scale bullet size
+        //        if (chargeTimer > 1)
+        //            addedDamage += 2;
 
-                _oneshotPlayer.PlayOneShot(pewpew);
-                //animator.SetBool("IsShooting", true);
-            }
-            else
-            {
-                // max bullet size and damage
-                scaleVal = .26f;
-                addedDamage = 5;
-                cloneBullet.GetComponent<Renderer>().material.color = Color.green;
-                _oneshotPlayer.PlayOneShot(bigPew);
-                //animator.SetBool("IsShooting", true);
-            }
+        //        _oneshotPlayer.PlayOneShot(pewpew);
+        //        //animator.SetBool("IsShooting", true);
+        //    }
+        //    else
+        //    {
+        //        // max bullet size and damage
+        //        scaleVal = .26f;
+        //        addedDamage = 5;
+        //        cloneBullet.GetComponent<Renderer>().material.color = Color.green;
+        //        _oneshotPlayer.PlayOneShot(bigPew);
+        //        //animator.SetBool("IsShooting", true);
+        //    }
           
-            cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
-            cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
-            cloneBullet.GetComponent<Bullet>().owner = gameObject;
-            ButtonReleased();
-            //animator.SetBool("IsShooting", false);
-        }
+        //    cloneBullet.transform.localScale += new Vector3(scaleVal, scaleVal, scaleVal);
+        //    cloneBullet.GetComponent<Bullet>().enemyDamage += addedDamage;
+        //    cloneBullet.GetComponent<Bullet>().owner = gameObject;
+        //    ButtonReleased();
+        //    //animator.SetBool("IsShooting", false);
+        //}
     }
 
     public void HoldButton()

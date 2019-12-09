@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Ground
   - Lava
+  - Restart
+  - GiveUp
+  - GameOver
   layers:
   - Default
   - TransparentFX
