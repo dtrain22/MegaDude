@@ -5,8 +5,8 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Animator animator;
-    public Transform firePoint;
-    public GameObject bullet;
+    private Transform firePoint;
+    private GameObject bullet;
     private PlayerMove playerMovement;
 
     //Audio
@@ -23,6 +23,8 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
+        firePoint = transform.GetChild(0);
+        bullet = (GameObject)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/PreFabs/Bullet.prefab", typeof(GameObject));
         playerMovement = GetComponent<PlayerMove>();
         _chargeWeaponPlayer = gameObject.AddComponent<AudioSource>();
         _chargeWeaponPlayer.clip = chargeWeapon;

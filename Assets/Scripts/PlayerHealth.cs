@@ -45,6 +45,8 @@ public class PlayerHealth : MonoBehaviour
             HealthBar.value = 0;
             GameOver();
         }
+
+        LowHealth();
     }
 
     public void Take_Damage(int amount)
@@ -85,6 +87,14 @@ public class PlayerHealth : MonoBehaviour
         {
             CurrentHealth = 0;
         }
+    }
+
+    void LowHealth()
+    {
+        if(HealthBar.value <= 30)
+            HealthBar.transform.GetChild(1).GetChild(0).GetComponent<Image>().color = new Color32(184, 0, 0, 255);
+        else
+            HealthBar.transform.GetChild(1).GetChild(0).GetComponent<Image>().color = new Color32(0, 161, 15, 255);
     }
 
     public void GameOver()
