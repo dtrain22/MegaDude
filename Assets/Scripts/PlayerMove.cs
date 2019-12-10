@@ -21,7 +21,7 @@ public class PlayerMove : MonoBehaviour
     private AudioSource _audioWrapper;
     public Animator animator;
     private bool m_FacingRight = true;
-
+    public bool isJumping;
     Controller2D controller;
 
     void Start()
@@ -37,27 +37,23 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(controller.collisions.above || controller.collisions.below)
+        if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
-            animator.SetBool("IsJumping", false);
+            isJumping = false;
         }
+
+        if (!controller.collisions.above && !controller.collisions.below)
+            isJumping = true;
 
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        if(Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
+        if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
         {
             velocity.y = jumpVelocity;
-            animator.SetBool("IsJumping", true);
-            if (GetComponent<Weapon>().isShooting)
-            {
-                animator.SetBool("IsShooting", true);
-            }
+            isJumping = true;
         }
-        else
-        {
-            animator.SetBool("IsJumping", false);
-        }
+
 
         float targetVelocityX = input.x * moveSpeed;
         targetVelocityX = Flip(targetVelocityX);
@@ -96,6 +92,11 @@ public class PlayerMove : MonoBehaviour
         }
 
         return velocityX;
+    }
+
+    public Vector3 GetVelocity()
+    {
+        return velocity;
     }
 
 }

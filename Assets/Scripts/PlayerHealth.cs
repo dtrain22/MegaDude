@@ -39,6 +39,12 @@ public class PlayerHealth : MonoBehaviour
         }
 
         HandleFallDeath();
+
+        if (CurrentHealth <= 0)
+        {
+            HealthBar.value = 0;
+            GameOver();
+        }
     }
 
     public void Take_Damage(int amount)
@@ -49,17 +55,6 @@ public class PlayerHealth : MonoBehaviour
             HealthBar.value = CurrentHealth;
             InvincibilityCounter = InvincibilityLength;
         }
-        
-        if(CurrentHealth <= 0)
-        {
-            GameOver();
-        }
-    }
-  
-    public void Die()
-    {
-        HealthBar.value = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void HandleFallDeath()
@@ -88,16 +83,16 @@ public class PlayerHealth : MonoBehaviour
     {
         if (transform.position.y < val)
         {
-            GameOver();
+            CurrentHealth = 0;
         }
     }
 
-    void GameOver()
+    public void GameOver()
     {
         gameOverTxt.SetActive(true);
         restartTxt.SetActive(true);
         giveUpTxt.SetActive(true);
         gameObject.SetActive(false);
-    }
+    }  
 }
 
