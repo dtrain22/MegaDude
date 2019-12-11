@@ -32,7 +32,7 @@ public class LavaController : MonoBehaviour
     {
         if(collision.collider.gameObject.tag == "Player")
         {
-            collision.collider.gameObject.GetComponent<PlayerHealth>().Die();
+            collision.collider.gameObject.GetComponent<PlayerHealth>().GameOver();
         }
     }
 }
