@@ -10,7 +10,6 @@ public class AnimationHandler : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        Debug.Log(GetComponent<PlayerMove>().isJumping);
         if (GetComponent<Weapon>().isShooting)
         {
             animator.SetBool("IsShooting", true);
