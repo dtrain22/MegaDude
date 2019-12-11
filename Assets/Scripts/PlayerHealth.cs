@@ -11,18 +11,16 @@ public class PlayerHealth : MonoBehaviour
     public bool Damage;
     public Slider HealthBar;
     public float InvincibilityLength;
-    private float InvincibilityCounter;
+    public float InvincibilityCounter;
     private const string grassLand = "First Level Design";
     private const string lavaLand = "LavaLevel";
     private GameObject gameOverTxt, restartTxt, giveUpTxt;
-    private Color originalColor;
 
     void Start()
     {
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
-        originalColor = gameObject.GetComponent<Renderer>().material.color;
 
         gameOverTxt = GameObject.FindGameObjectWithTag("GameOver");
         restartTxt = GameObject.FindGameObjectWithTag("Restart");
@@ -38,13 +36,7 @@ public class PlayerHealth : MonoBehaviour
         if (InvincibilityCounter > 0)
         {
             InvincibilityCounter -= Time.deltaTime;
-            gameObject.GetComponent<Renderer>().material.color = new Color32(236, 108, 108, 255);
         }
-        else
-        {
-            gameObject.GetComponent<Renderer>().material.color = originalColor;
-        }
-        
 
         HandleFallDeath();
 

@@ -37,6 +37,7 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
+
         if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
@@ -61,6 +62,15 @@ public class PlayerMove : MonoBehaviour
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime, m_FacingRight);
+
+        if (isJumping)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", false);
+        }
     }
 
     //public IEnumerator Knockback(float KnockbackDur, float KnockbackPwr, Vector3 KnockbackDir)

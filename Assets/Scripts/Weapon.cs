@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Animator animator;
+    private Color originalColor;
     private Transform firePoint;
     private GameObject bullet;
     private PlayerMove playerMovement;
@@ -29,14 +30,19 @@ public class Weapon : MonoBehaviour
         _chargeWeaponPlayer = gameObject.AddComponent<AudioSource>();
         _chargeWeaponPlayer.clip = chargeWeapon;
         _oneshotPlayer = gameObject.AddComponent<AudioSource>();
+        originalColor = gameObject.GetComponent<Renderer>().material.color;
     }
 
     void Update()
     {
-        if (isShooting) {
+        if (isShooting)
+        {
             chargeTimer += Time.deltaTime * chargeRate;
             growthRate += .01f * .2f;
+            animator.SetBool("IsShooting", true);
         }
+        else
+            animator.SetBool("IsShooting", false);
 
         if (Input.GetButtonDown("Fire1"))
         {
