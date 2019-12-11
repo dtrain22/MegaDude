@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public bool Damage;
     public Slider HealthBar;
     public float InvincibilityLength;
-    private float InvincibilityCounter;
+    public float InvincibilityCounter;
     private const string grassLand = "First Level Design";
     private const string lavaLand = "LavaLevel";
     private GameObject gameOverTxt, restartTxt, giveUpTxt;
@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
         CurrentHealth = health;
         HealthBar.value = health;
-
+    
         gameOverTxt = GameObject.FindGameObjectWithTag("GameOver");
         restartTxt = GameObject.FindGameObjectWithTag("Restart");
         giveUpTxt = GameObject.FindGameObjectWithTag("GiveUp");
@@ -36,9 +36,17 @@ public class PlayerHealth : MonoBehaviour
         if (InvincibilityCounter > 0)
         {
             InvincibilityCounter -= Time.deltaTime;
-        }
+        }     
 
         HandleFallDeath();
+
+        if (CurrentHealth <= 0)
+        {
+            HealthBar.value = 0;
+            GameOver();
+        }
+
+        LowHealth();
     }
 
     public void Take_Damage(int amount)
@@ -49,17 +57,6 @@ public class PlayerHealth : MonoBehaviour
             HealthBar.value = CurrentHealth;
             InvincibilityCounter = InvincibilityLength;
         }
-        
-        if(CurrentHealth <= 0)
-        {
-            GameOver();
-        }
-    }
-  
-    public void Die()
-    {
-        HealthBar.value = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void HandleFallDeath()
@@ -88,16 +85,24 @@ public class PlayerHealth : MonoBehaviour
     {
         if (transform.position.y < val)
         {
-            GameOver();
+            CurrentHealth = 0;
         }
     }
 
-    void GameOver()
+    void LowHealth()
+    {
+        if(HealthBar.value <= 30)
+            HealthBar.transform.GetChild(1).GetChild(0).GetComponent<Image>().color = new Color32(184, 0, 0, 255);
+        else
+            HealthBar.transform.GetChild(1).GetChild(0).GetComponent<Image>().color = new Color32(0, 161, 15, 255);
+    }
+
+    public void GameOver()
     {
         gameOverTxt.SetActive(true);
         restartTxt.SetActive(true);
         giveUpTxt.SetActive(true);
         gameObject.SetActive(false);
-    }
+    }  
 }
 
