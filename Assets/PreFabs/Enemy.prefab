@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5226017426478130619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -239,10 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   meleeDamage: 5
+  jumpForce: 0
+  distance: 0
   chomp: {fileID: 8300000, guid: 9a20886034858874581de731cc501ade, type: 3}
   death: {fileID: 8300000, guid: 26fbc460033afcd4aaf06d8ae778dd78, type: 3}
-  jumpForce: 0
-  isOnGround: 0
-  distance: 0
-  speed: 0
-  groundDetection: {fileID: 0}

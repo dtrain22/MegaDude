@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public float distance;
     public AudioClip chomp;
     public AudioClip death;
+    private GameObject loot;
 
 
     void Start()
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
         Ground = GameObject.FindGameObjectWithTag("Ground");
         _audioPlayer = gameObject.AddComponent<AudioSource>();
         _rigidbody = GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+        loot = (GameObject)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/PreFabs/HealthPack.prefab", typeof(GameObject));
 
         isOnGround = false;
         health = 20;
@@ -50,7 +52,10 @@ public class Enemy : MonoBehaviour
             _audioPlayer.PlayOneShot(chomp, 0.5f);
         } else
         {
+            var position = transform.position;
+            var rotation = Quaternion.identity;
             Destroy(gameObject);
+            DropLoot(position, rotation);
         }
     }
 
@@ -70,5 +75,13 @@ public class Enemy : MonoBehaviour
     void OnCollisionExit2D()
     {
         isOnGround = false;
+    }
+
+    void DropLoot(Vector3 position, Quaternion rotation)
+    {
+        if(Random.Range(1, 1000) < 200)
+        {
+            Instantiate(loot, position, rotation);
+        }
     }
 }
