@@ -39,6 +39,10 @@ public class PlayerHealth : MonoBehaviour
         }
 
         HandleFallDeath();
+        if (CurrentHealth > 100)
+        {
+            CurrentHealth = 100;
+        }
     }
 
     public void Take_Damage(int amount)
