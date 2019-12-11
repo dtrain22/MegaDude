@@ -40,6 +40,11 @@ public class PlayerHealth : MonoBehaviour
 
         HandleFallDeath();
 
+        if (CurrentHealth > 100)
+        {
+            CurrentHealth = 100;
+        }
+
         if (CurrentHealth <= 0)
         {
             HealthBar.value = 0;
