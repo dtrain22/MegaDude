@@ -14,7 +14,7 @@ public class LavaController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         currentHeight = transform.position.y;
-        maxHeight = 37;
+        maxHeight = 35;
     }
 
     // Update is called once per frame
@@ -22,9 +22,10 @@ public class LavaController : MonoBehaviour
     {
         if (currentHeight < maxHeight && player.transform.position.x > 197)
         {
-            float newY = transform.position.y + .05f;
+            float newY = transform.position.y + .02f;
             move.Set(transform.position.x, newY, transform.position.z);
             transform.position = move;
+            currentHeight = newY;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
