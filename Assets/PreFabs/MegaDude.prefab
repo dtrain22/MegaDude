@@ -149,9 +149,7 @@ MonoBehaviour:
   Damage: 0
   HealthBar: {fileID: 0}
   InvincibilityLength: 5
-  Player: {fileID: 0}
-  FallDeath: -5
-  Scene: 
+  InvincibilityCounter: 0
 --- !u!114 &8142583525147437548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,13 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8142583525123431758}
-  firePoint: {fileID: 8142583526349646575}
-  bullet: {fileID: 1034114450864835993, guid: f45f3467980cc9a4aac09991be819269, type: 3}
   pewpew: {fileID: 8300000, guid: b61f459cf27096140a6ff0e2f310b8f8, type: 3}
   bigPew: {fileID: 8300000, guid: 3553c5d800cc6cb468beef19f9ecd655, type: 3}
   chargeWeapon: {fileID: 8300000, guid: c6498d02597416249834e1e6905c2906, type: 3}
   chargeTimer: 0
   growthRate: 0.1
+  isShooting: 0
 --- !u!114 &1908215816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +185,7 @@ MonoBehaviour:
   timeToJumpApex: 1.1
   jump: {fileID: 8300000, guid: dc907db6e0b160e4f8937076263b2642, type: 3}
   animator: {fileID: 8142583525123431758}
+  isJumping: 0
 --- !u!114 &1908215817
 MonoBehaviour:
   m_ObjectHideFlags: 0
