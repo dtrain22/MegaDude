@@ -5721,11 +5721,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 2d913e343ce02e04a8b20e9111c4cd54, type: 3}
     - target: {fileID: 1908215816, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
       propertyPath: jumpHeight
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1908215816, guid: 1a21769ed9a684eb6b2f51afef14e7c4, type: 3}
       propertyPath: timeToJumpApex
-      value: 1
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 8142583526349646575, guid: 1a21769ed9a684eb6b2f51afef14e7c4,
         type: 3}
